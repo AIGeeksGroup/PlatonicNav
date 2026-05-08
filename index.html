@@ -92,10 +92,13 @@
               </span>
             </p>
             <div class="mx-auto" style="width: 70%; max-width: 44.8rem;">
-              <div class="flex justify-center content-center">
-                <video class="rounded-xl mx-auto w-full" controls poster="video/teaser_poster.jpg">
+              <div class="flex justify-center content-center relative">
+                <video id="teaser-video" class="rounded-xl mx-auto w-full" playsinline preload="metadata" poster="video/teaser_poster.jpg">
                   <source src="video/teaser.mp4" type="video/mp4"/>
                 </video>
+                <button id="teaser-play-button" type="button" aria-label="Play teaser video" class="absolute inset-0 flex items-center justify-center">
+                  <span class="flex items-center justify-center rounded-full bg-white/85 text-stone-900 shadow-lg" style="width: 4.5rem; height: 4.5rem; font-size: 2rem; line-height: 1;">&#9654;</span>
+                </button>
               </div>
               <div class="flex justify-center">
                 <p class="text-center text-lg !mt-0 !mb-2 mx-auto" style="max-width: 64rem;">
@@ -366,5 +369,18 @@
         </main>
       </div>
     </div>
+    <script>
+      const teaserVideo = document.getElementById('teaser-video');
+      const teaserPlayButton = document.getElementById('teaser-play-button');
+
+      if (teaserVideo && teaserPlayButton) {
+        teaserPlayButton.addEventListener('click', () => {
+          teaserVideo.muted = false;
+          teaserVideo.controls = true;
+          teaserVideo.play();
+          teaserPlayButton.style.display = 'none';
+        });
+      }
+    </script>
   </body>
 </html>
