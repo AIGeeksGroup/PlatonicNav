@@ -5,6 +5,47 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      #teaser-progress {
+        -webkit-appearance: none;
+        appearance: none;
+        background: transparent;
+        min-width: 0;
+        width: 0;
+      }
+
+      #teaser-progress::-webkit-slider-runnable-track {
+        height: 0.375rem;
+        border-radius: 9999px;
+        background: rgba(255, 255, 255, 0.35);
+      }
+
+      #teaser-progress::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 1rem;
+        height: 1rem;
+        margin-top: -0.3125rem;
+        border-radius: 9999px;
+        background: #ffffff;
+        cursor: pointer;
+      }
+
+      #teaser-progress::-moz-range-track {
+        height: 0.375rem;
+        border-radius: 9999px;
+        background: rgba(255, 255, 255, 0.35);
+      }
+
+      #teaser-progress::-moz-range-thumb {
+        width: 1rem;
+        height: 1rem;
+        border: 0;
+        border-radius: 9999px;
+        background: #ffffff;
+        cursor: pointer;
+      }
+    </style>
     <link rel="sitemap" type="application/xml" href="sitemap-index.xml"/>
     <title>PlatonicNav: Unveiling Semantic Correspondence in Navigation with Platonic Topological Maps</title>
   </head>
@@ -96,12 +137,29 @@
                 <video id="teaser-video" class="rounded-xl mx-auto w-full" playsinline preload="metadata" poster="video/teaser_poster.jpg">
                   <source src="video/teaser.mp4" type="video/mp4"/>
                 </video>
-                <div id="teaser-controls" style="position: absolute; left: 0; right: 0; bottom: calc(1.75rem + 4px); display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem 1rem; color: white; background: rgba(0, 0, 0, 0.72); border-radius: 0.75rem; opacity: 0; transition: opacity 300ms ease; pointer-events: none;">
-                  <button id="teaser-play-button" type="button" aria-label="Play teaser video" style="display: flex; align-items: center; justify-content: center; width: 2.75rem; height: 2.75rem; flex: 0 0 2.75rem; border-radius: 9999px; background: rgba(255, 255, 255, 0.92); color: #1c1917; font-size: 1.25rem; line-height: 1; padding: 0;">&#9654;</button>
-                  <div style="flex: 1; height: 0.375rem; border-radius: 9999px; background: rgba(255, 255, 255, 0.3); overflow: hidden;">
-                    <div id="teaser-progress" style="width: 0%; height: 100%; background: white;"></div>
+                <div id="teaser-controls" style="position: absolute; left: 0; right: 0; bottom: calc(1.75rem + 4px); box-sizing: border-box; display: flex; align-items: center; gap: 0.6rem; padding: 0.5rem 0.75rem; color: white; background: rgba(0, 0, 0, 0.72); border-radius: 0.75rem; opacity: 0; transition: opacity 300ms ease; pointer-events: none;">
+                  <button id="teaser-play-button" type="button" aria-label="Play teaser video" style="display: flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; flex: 0 0 2.5rem; border-radius: 9999px; background: rgba(255, 255, 255, 0.92); color: #1c1917; font-size: 1.1rem; line-height: 1; padding: 0;">&#9654;</button>
+                  <div id="teaser-seek-bar" role="slider" tabindex="0" aria-label="Teaser video progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" style="position: relative; flex: 1 1 auto; height: 1rem; cursor: pointer; touch-action: none;">
+                    <div style="position: absolute; left: 0; right: 0; top: 50%; height: 0.375rem; transform: translateY(-50%); border-radius: 9999px; background: rgba(255, 255, 255, 0.35);"></div>
+                    <div id="teaser-progress-fill" style="position: absolute; left: 0; top: 50%; width: 0%; height: 0.375rem; transform: translateY(-50%); border-radius: 9999px; background: white;"></div>
+                    <div id="teaser-progress-thumb" style="position: absolute; left: 0%; top: 50%; width: 1rem; height: 1rem; transform: translate(-50%, -50%); border-radius: 9999px; background: white;"></div>
                   </div>
-                  <span id="teaser-time" style="font-size: 0.875rem; line-height: 1.25rem; font-variant-numeric: tabular-nums;">0:00</span>
+                  <span id="teaser-time" style="display: inline-block; width: 2.5rem; flex: 0 0 2.5rem; font-size: 0.875rem; line-height: 1.25rem; font-variant-numeric: tabular-nums;">0:00</span>
+                  <button id="teaser-mute-button" type="button" aria-label="Mute teaser video" style="display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; flex: 0 0 2rem; border-radius: 9999px; color: white; padding: 0;">
+                    <svg id="teaser-mute-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                      <path d="M15.5 8.5a5 5 0 0 1 0 7"></path>
+                      <path d="M19 5a10 10 0 0 1 0 14"></path>
+                    </svg>
+                  </button>
+                  <button id="teaser-fullscreen-button" type="button" aria-label="Fullscreen teaser video" style="display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; flex: 0 0 2rem; border-radius: 9999px; color: white; padding: 0;">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M8 3H5a2 2 0 0 0-2 2v3"></path>
+                      <path d="M16 3h3a2 2 0 0 1 2 2v3"></path>
+                      <path d="M8 21H5a2 2 0 0 1-2-2v-3"></path>
+                      <path d="M16 21h3a2 2 0 0 0 2-2v-3"></path>
+                    </svg>
+                  </button>
                 </div>
               </div>
               <div class="flex justify-center">
@@ -378,9 +436,15 @@
       const teaserVideo = document.getElementById('teaser-video');
       const teaserControls = document.getElementById('teaser-controls');
       const teaserPlayButton = document.getElementById('teaser-play-button');
-      const teaserProgress = document.getElementById('teaser-progress');
+      const teaserSeekBar = document.getElementById('teaser-seek-bar');
+      const teaserProgressFill = document.getElementById('teaser-progress-fill');
+      const teaserProgressThumb = document.getElementById('teaser-progress-thumb');
       const teaserTime = document.getElementById('teaser-time');
+      const teaserMuteButton = document.getElementById('teaser-mute-button');
+      const teaserMuteIcon = document.getElementById('teaser-mute-icon');
+      const teaserFullscreenButton = document.getElementById('teaser-fullscreen-button');
       let teaserControlsTimer;
+      let isSeekingTeaser = false;
 
       const formatTeaserTime = (seconds) => {
         if (!Number.isFinite(seconds)) return '0:00';
@@ -417,13 +481,92 @@
         }
       };
 
+      const updateTeaserMuteButton = () => {
+        if (!teaserVideo || !teaserMuteButton || !teaserMuteIcon) return;
+        if (teaserVideo.muted || teaserVideo.volume === 0) {
+          teaserMuteIcon.innerHTML = '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line>';
+        } else {
+          teaserMuteIcon.innerHTML = '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path>';
+        }
+        teaserMuteButton.setAttribute('aria-label', teaserVideo.muted || teaserVideo.volume === 0 ? 'Unmute teaser video' : 'Mute teaser video');
+      };
+
+      const setTeaserProgress = (percent) => {
+        const clampedPercent = Math.max(0, Math.min(100, percent));
+        if (teaserProgressFill) teaserProgressFill.style.width = `${clampedPercent}%`;
+        if (teaserProgressThumb) teaserProgressThumb.style.left = `${clampedPercent}%`;
+        if (teaserSeekBar) teaserSeekBar.setAttribute('aria-valuenow', String(Math.round(clampedPercent)));
+      };
+
+      const seekTeaserToClientX = (clientX) => {
+        if (!teaserVideo || !teaserSeekBar || !Number.isFinite(teaserVideo.duration) || teaserVideo.duration <= 0) return;
+        const rect = teaserSeekBar.getBoundingClientRect();
+        const percent = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+        teaserVideo.currentTime = percent * teaserVideo.duration;
+        setTeaserProgress(percent * 100);
+      };
+
       if (teaserPlayer && teaserVideo && teaserControls && teaserPlayButton) {
         teaserPlayButton.addEventListener('click', () => {
           toggleTeaserPlayback();
         });
 
+        if (teaserMuteButton) {
+          teaserMuteButton.addEventListener('click', () => {
+            teaserVideo.muted = !teaserVideo.muted;
+            updateTeaserMuteButton();
+            showTeaserControls();
+          });
+        }
+
+        if (teaserFullscreenButton) {
+          teaserFullscreenButton.addEventListener('click', () => {
+            if (document.fullscreenElement) {
+              document.exitFullscreen();
+            } else if (teaserPlayer.requestFullscreen) {
+              teaserPlayer.requestFullscreen();
+            } else if (teaserVideo.webkitEnterFullscreen) {
+              teaserVideo.webkitEnterFullscreen();
+            }
+            showTeaserControls();
+          });
+        }
+
+        if (teaserSeekBar) {
+          teaserSeekBar.addEventListener('pointerdown', (event) => {
+            isSeekingTeaser = true;
+            teaserSeekBar.setPointerCapture(event.pointerId);
+            seekTeaserToClientX(event.clientX);
+            showTeaserControls();
+          });
+          teaserSeekBar.addEventListener('pointermove', (event) => {
+            if (!isSeekingTeaser) return;
+            seekTeaserToClientX(event.clientX);
+            showTeaserControls();
+          });
+          teaserSeekBar.addEventListener('pointerup', (event) => {
+            isSeekingTeaser = false;
+            seekTeaserToClientX(event.clientX);
+            showTeaserControls();
+          });
+          teaserSeekBar.addEventListener('pointercancel', () => {
+            isSeekingTeaser = false;
+          });
+          teaserSeekBar.addEventListener('keydown', (event) => {
+            if (!Number.isFinite(teaserVideo.duration) || teaserVideo.duration <= 0) return;
+            if (event.key === 'ArrowLeft') {
+              teaserVideo.currentTime = Math.max(0, teaserVideo.currentTime - 5);
+              event.preventDefault();
+            }
+            if (event.key === 'ArrowRight') {
+              teaserVideo.currentTime = Math.min(teaserVideo.duration, teaserVideo.currentTime + 5);
+              event.preventDefault();
+            }
+          });
+        }
+
         teaserPlayer.addEventListener('click', (event) => {
-          if (event.target.closest('button')) return;
+          if (event.target.closest('button') || event.target.closest('#teaser-seek-bar')) return;
           toggleTeaserPlayback();
           showTeaserControls();
         });
@@ -444,13 +587,16 @@
         });
 
         teaserVideo.addEventListener('timeupdate', () => {
-          if (teaserProgress && Number.isFinite(teaserVideo.duration) && teaserVideo.duration > 0) {
-            teaserProgress.style.width = `${(teaserVideo.currentTime / teaserVideo.duration) * 100}%`;
+          if (!isSeekingTeaser && Number.isFinite(teaserVideo.duration) && teaserVideo.duration > 0) {
+            setTeaserProgress((teaserVideo.currentTime / teaserVideo.duration) * 100);
           }
           if (teaserTime) {
             teaserTime.textContent = formatTeaserTime(teaserVideo.currentTime);
           }
         });
+
+        teaserVideo.addEventListener('volumechange', updateTeaserMuteButton);
+        updateTeaserMuteButton();
       }
     </script>
   </body>
