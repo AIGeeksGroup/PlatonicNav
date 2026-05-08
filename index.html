@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charSet="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="sitemap" type="application/xml" href="sitemap-index.xml"/>
+    <title>PlatonicNav: Unveiling Semantic Correspondence in Navigation with Platonic Topological Maps</title>
+  </head>
+  <body>
+    <div id="app">
+      <div style="outline:none" tabindex="-1" id="page">
+        <main id="top" class="pt-6 lg:pt-12 bg-white dark:bg-gray-900">
+          <div class="mx-auto w-full max-w-[90%] format format-md md:format-base lg:max-w-7xl lg:format-lg format-blue dark:format-invert">
+            <h1 class="pb-1 mb-5 sm:mb-4 sm:leading-tight md:leading-tight lg:leading-tight font-bold text-center">
+              <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-indigo-600 to-emerald-400">PlatonicNav:</span>
+              <span class="text-stone-800">Unveiling Semantic Correspondence in</span>
+              <br/>
+              <span class="text-stone-800">Navigation with Platonic Topological Maps</span>
+            </h1>
+            <div class="flex justify-center">
+              <div class="flex flex-wrap justify-center text-2xl lg:text-2xl mb-6 sm:mb-5">
+                <!-- <span class="font-normal no-underline text-stone-600 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-indigo-600 to-emerald-400">
+                  Paper 2026
+                </span> -->
+              </div>
+            </div>
+            <div class="text-center text-xl lg:text-xl mb-3 text-stone-600 leading-relaxed">
+              <div class="flex flex-wrap justify-center font-semibold" style="column-gap: 2.5rem; row-gap: 0.25rem;">
+                <span>Junlin Long<sup class="pl-0.5">1*</sup></span>
+                <span><a href="https://steve-zeyu-zhang.github.io/" target="_blank" style="color: inherit; font: inherit; font-weight: inherit; font-size: inherit; line-height: inherit; font-family: inherit; text-decoration: none;">Zeyu Zhang</a><sup class="pl-0.5">2*&#8224;</sup></span>
+                <span>Xu Deng<sup class="pl-0.5">3*</sup></span>
+                <span>Yiran Wang<sup class="pl-0.5">1*</sup></span>
+              </div>
+              <div class="flex flex-wrap justify-center font-semibold" style="column-gap: 2.5rem; row-gap: 0.25rem;">
+                <span>Yue Yang<sup class="pl-0.5">2</sup></span>
+                <span>Luke Borgnolo<sup class="pl-0.5">2</sup></span>
+                <span>Maxwell Twelftree<sup class="pl-0.5">2</sup></span>
+                <span>Yang Zhao<sup class="pl-0.5">4&#8225;</sup></span>
+              </div>
+            </div>
+            <div class="flex flex-wrap justify-center text-xl lg:text-xl text-stone-600 mb-1" style="column-gap: 2rem; row-gap: 0.25rem;">
+              <span><sup class="mr-0.5">1</sup>USYD</span>
+              <span><sup class="mr-0.5">2</sup>Maincode</span>
+              <span><sup class="mr-0.5">3</sup>UNSW</span>
+              <span><sup class="mr-0.5">4</sup>La Trobe</span>
+            </div>
+            <div class="flex flex-wrap justify-center text-base text-stone-500 mb-4" style="column-gap: 1.5rem; row-gap: 0.25rem;">
+              <span><sup>*</sup>Equal contribution.</span>
+              <span><sup>&#8224;</sup>Project lead.</span>
+              <span><sup>&#8225;</sup>Corresponding author.</span>
+            </div>
+            <p class="flex flex-wrap justify-center">
+              <span class="text-center inline-block my-3.5 sm:my-2 mx-2">
+                <a href="https://arxiv.org/abs/" target="_blank" class="text-xl no-underline font-normal text-[#009cff] bg-[#f9f9f9] hover:bg-[#f4f4f4] hover:transition-all px-4 py-3 rounded-xl">
+                  <span class="align-middle inline-flex justify-center mr-0.25">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <title></title>
+                      <path d="M3.8423 0a1.0037 1.0037 0 0 0-.922.6078c-.1536.3687-.0438.6275.2938 1.1113l6.9185 8.3597-1.0223 1.1058a1.0393 1.0393 0 0 0 .003 1.4229l1.2292 1.3135-5.4391 6.4444c-.2803.299-.4538.823-.2971 1.1986a1.0253 1.0253 0 0 0 .9585.635.9133.9133 0 0 0 .6891-.3405l5.783-6.126 7.4902 8.0051a.8527.8527 0 0 0 .6835.2597.9575.9575 0 0 0 .8777-.6138c.1577-.377-.017-.7502-.306-1.1407l-7.0518-8.3418 1.0632-1.13a.9626.9626 0 0 0 .0089-1.3165L4.6336.4639s-.3733-.4535-.768-.463zm0 .272h.0166c.2179.0052.4874.2715.5644.3639l.005.006.0052.0055 10.169 10.9905a.6915.6915 0 0 1-.0072.945l-1.0666 1.133-1.4982-1.7724-8.5994-10.39c-.3286-.472-.352-.6183-.2592-.841a.7307.7307 0 0 1 .6704-.4401Zm14.341 1.5701a.877.877 0 0 0-.6554.2418l-5.6962 6.1584 1.6944 1.8319 5.3089-6.5138c.3251-.4335.479-.6603.3247-1.0292a1.1205 1.1205 0 0 0-.9763-.689zm-7.6557 12.2823 1.3186 1.4135-5.7864 6.1295a.6494.6494 0 0 1-.4959.26.7516.7516 0 0 1-.706-.4669c-.1119-.2682.0359-.6864.2442-.9083l.0051-.0055.0047-.0055z">
+                      </path>
+                    </svg>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="text-center inline-block my-3.5 sm:my-2 mx-2">
+                <a href="https://github.com/AIGeeksGroup/PlatonicNav" target="_blank" class="text-xl no-underline font-normal text-[#009cff] bg-[#f9f9f9] hover:bg-[#f4f4f4] hover:transition-all px-4 py-3 rounded-xl">
+                  <span class="align-middle inline-flex justify-center mr-0.25">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z">
+                      </path>
+                    </svg>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <span class="text-center inline-block my-3.5 sm:my-2 mx-2">
+                <a href="https://huggingface.co/AIGeeksGroup/PlatonicNav" target="_blank" class="text-xl no-underline font-normal text-[#009cff] bg-[#f9f9f9] hover:bg-[#f4f4f4] hover:transition-all px-4 py-3 rounded-xl">
+                  <span class="align-middle inline-flex justify-center mr-0.25">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                      </path>
+                      <path d="M3.27 6.96 12 12.01l8.73-5.05">
+                      </path>
+                      <path d="M12 22.08V12">
+                      </path>
+                    </svg>
+                  </span>
+                  <span>Model</span>
+                </a>
+              </span>
+            </p>
+            <div class="mx-auto" style="width: 70%; max-width: 44.8rem;">
+              <div class="flex justify-center content-center">
+                <video class="rounded-xl mx-auto w-full" controls poster="video/teaser_poster.jpg">
+                  <source src="video/teaser.mp4" type="video/mp4"/>
+                </video>
+              </div>
+              <div class="flex justify-center">
+                <p class="text-center text-lg !mt-0 !mb-2 mx-auto" style="max-width: 64rem;">
+                  <b>TL;DR:</b>
+                  PlatonicNav enables training-free embodied navigation through blind semantic matching between vision and language, unifying VLN and ObjNav using self-supervised visual representations.
+                </p>
+              </div>
+            </div>
+          </div>
+          <br><br>
+          <div class="mx-auto w-full max-w-[90%] mt-12 format format-md md:format-base lg:max-w-5xl lg:format-lg format-blue dark:format-invert">
+            <h2 class="text-center font-semibold" id="video">Real World Evaluation: ObjNav
+            </h2>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-3">Demo 1: Pre-exploration</h3>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>Pointmap</span>
+              </div>
+              <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                <source src="video/ObjNav/demo1/teach_robot_depth_pointmap_sync_ON1.mp4" type="video/mp4"/>
+              </video>
+            </div>
+            <div class="mt-6">
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(2, 1fr);">
+                <span>Ego</span>
+                <span>Object Map</span>
+              </div>
+              <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                <source src="video/ObjNav/demo1/robot_plus_map_sync_ON1.mp4" type="video/mp4"/>
+              </video>
+            </div>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-3">Demo 1: Navigation</h3>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>Pointmap</span>
+              </div>
+              <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                <source src="video/ObjNav/demo1/repeat_robot_depth_pointmap_sync_ON1.mp4" type="video/mp4"/>
+              </video>
+            </div>
+            <div class="mt-6 mx-auto" style="width: 60%;">
+              <div class="mb-2 text-center font-semibold text-stone-700">BEV</div>
+              <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                <source src="video/ObjNav/demo1/Bird's-Eye-View_ON1.mp4" type="video/mp4"/>
+              </video>
+            </div>
+            <hr class="my-10 border-t border-stone-200"/>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-3">Demo 2: Pre-exploration</h3>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>Pointmap</span>
+              </div>
+              <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                <source src="video/ObjNav/demo2/teach_robot_depth_pointmap_sync_ON2.mp4" type="video/mp4"/>
+              </video>
+            </div>
+            <div class="mt-6">
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(2, 1fr);">
+                <span>Ego</span>
+                <span>Object Map</span>
+              </div>
+              <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                <source src="video/ObjNav/demo2/robot_plus_map_sync_ON2.mp4" type="video/mp4"/>
+              </video>
+            </div>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-3">Demo 2: Navigation</h3>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>Pointmap</span>
+              </div>
+              <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                <source src="video/ObjNav/demo2/repeat_robot_depth_pointmap_sync_ON2.mp4" type="video/mp4"/>
+              </video>
+            </div>
+            <div class="mt-6 mx-auto" style="width: 60%;">
+              <div class="mb-2 text-center font-semibold text-stone-700">BEV</div>
+              <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                <source src="video/ObjNav/demo2/Bird's-Eye-View_ON2.mp4" type="video/mp4"/>
+              </video>
+            </div>
+            <hr class="my-10 border-t border-stone-200"/>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-3">Demo 3: Pre-exploration</h3>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>Pointmap</span>
+              </div>
+              <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                <source src="video/ObjNav/demo3/teach_robot_depth_pointmap_sync_ON3.mp4" type="video/mp4"/>
+              </video>
+            </div>
+            <div class="mt-6">
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(2, 1fr);">
+                <span>Ego</span>
+                <span>Object Map</span>
+              </div>
+              <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                <source src="video/ObjNav/demo3/robot_plus_map_sync_ON3.mp4" type="video/mp4"/>
+              </video>
+            </div>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-3">Demo 3: Navigation</h3>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>Pointmap</span>
+              </div>
+              <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                <source src="video/ObjNav/demo3/repeat_robot_depth_pointmap_sync_ON3.mp4" type="video/mp4"/>
+              </video>
+            </div>
+            <div class="mt-6 mx-auto" style="width: 60%;">
+              <div class="mb-2 text-center font-semibold text-stone-700">BEV</div>
+              <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                <source src="video/ObjNav/demo3/Bird's-Eye-View_ON3.mp4" type="video/mp4"/>
+              </video>
+            </div>
+            <hr class="my-10 border-t border-stone-200"/>
+            <h2 class="text-center font-semibold" id="video">Real World Evaluation: VLN
+            </h2>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-3">Find the Plant</h3>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>Pointmap</span>
+              </div>
+              <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                <source src="video/VLN/find-the-plant/Ego_Depth_Pointmap_sync_Plant.mp4" type="video/mp4"/>
+              </video>
+            </div>
+            <div class="mt-6 mx-auto" style="width: 60%;">
+              <div class="mb-2 text-center font-semibold text-stone-700">BEV</div>
+              <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                <source src="video/VLN/find-the-plant/Bird's-Eye-View_Plant.mp4" type="video/mp4"/>
+              </video>
+            </div>
+            <hr class="my-10 border-t border-stone-200"/>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-3">Go to the Chair</h3>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>Pointmap</span>
+              </div>
+              <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                <source src="video/VLN/go-to-the-chair/Ego_Depth_Pointmap_sync_Chair.mp4" type="video/mp4"/>
+              </video>
+            </div>
+            <div class="mt-6 mx-auto" style="width: 60%;">
+              <div class="mb-2 text-center font-semibold text-stone-700">BEV</div>
+              <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                <source src="video/VLN/go-to-the-chair/Bird's-Eye-View_chair.mp4" type="video/mp4"/>
+              </video>
+            </div>
+            <hr class="my-10 border-t border-stone-200"/>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-3">Go to the Lamp</h3>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>Pointmap</span>
+              </div>
+              <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                <source src="video/VLN/go-to-the-lamp/Ego_Depth_Pointmap_sync_Lamp.mp4" type="video/mp4"/>
+              </video>
+            </div>
+            <div class="mt-6 mx-auto" style="width: 60%;">
+              <div class="mb-2 text-center font-semibold text-stone-700">BEV</div>
+              <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                <source src="video/VLN/go-to-the-lamp/Bird's-Eye-View_Lamp.mp4" type="video/mp4"/>
+              </video>
+            </div>
+            <hr class="my-10 border-t border-stone-200"/>
+            <h2 class="text-center font-semibold" id="video">Method
+            </h2>
+            <div class="flex justify-center content-center !mb-2">
+              <img class="rounded-xl mx-auto w-full" src="images/platonicnav.png" alt="PlatonicNav pipeline"/>
+            </div>
+            <p class="text-justify font-light text-base sm:text-lg md:max-w-[85%] mx-auto !mt-2">
+              <b>PlatonicNav Pipeline.</b>
+              <b>(a) Mapping:</b>
+              We construct Platonic Topological Map as a semantic scene graph, where image segments are used as object nodes, and edges are weighted by both geometric distance and semantic distance computed from vision embedding space.
+              <b>(b) Goal Selection:</b>
+              Given the natural-language instruction, we pairwise blind match language embeddings of goal object category and visual embedding of segment cluster, selecting the candidate goal nodes in Platonic Topological Map.
+              <b>(c) Execution:</b>
+              Given the map and candidate goal nodes, we compute the paths to the goal node which can be reached by lightest edge weight; the resulting path lengths are assigned to segmentation masks to form a <em>PlatonicObject Costmap</em> for control prediction.
+            </p>
+            <h2 class="text-center font-semibold" id="blind-matching">Blind Matching of Vision and Language in Navigation
+            </h2>
+            <div class="flex justify-center content-center !mb-2 mx-auto" style="width: 60%;">
+              <img class="rounded-xl mx-auto w-full" src="images/blind-match_page-0001.jpg" alt="Blind matching of vision and language in navigation"/>
+            </div>
+            <p class="text-justify font-light text-base sm:text-lg md:max-w-[85%] mx-auto !mt-2">
+              <b>Blind matching of vision and language in navigation scene.</b>
+              Text and images are both abstractions of the same underlying world. Vision and language encoders <em>f<sub>v</sub></em> and <em>f<sub>l</sub></em> learn similar pairwise relations between concepts. We exploit these pairwise relations in a matching solver to recover valid correspondences between vision and language representations without requiring any paired data.
+            </p>
+            <h2 id="citation" class="">Citation
+            </h2>
+            <div class="relative overflow-auto">
+              <pre class="bg-gradient-to-r from-pink-100 via-indigo-100 to-emerald-100 !my-0"><code id="citation-bib" class="font-medium text-slate-800">@techreport{long2026platonicnav,
+    title={PlatonicNav: Unveiling Semantic Correspondence in Navigation with Platonic Topological Maps},
+    author={Junlin Long and Zeyu Zhang and Xu Deng and Yiran Wang and Yue Yang and Luke Borgnolo and Maxwell Twelftree and Yang Zhao},
+    institution={Technical Report},
+    year={2026}
+    }</code></pre>
+              <div class="absolute top-0 right-0">
+                <button class="float-right text-2xl text-indigo-500 bg-white hover:bg-slate-50 hover:text-indigo-600 hover:transition-all rounded-full p-2 m-3 invisible md:visible">
+                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3a2 2 0 0 0-2 2">
+                    </path>
+                    <path d="M19 3a2 2 0 0 1 2 2">
+                    </path>
+                    <path d="M21 19a2 2 0 0 1-2 2">
+                    </path>
+                    <path d="M5 21a2 2 0 0 1-2-2">
+                    </path>
+                    <path d="M9 3h1">
+                    </path>
+                    <path d="M9 21h1">
+                    </path>
+                    <path d="M14 3h1">
+                    </path>
+                    <path d="M14 21h1">
+                    </path>
+                    <path d="M3 9v1">
+                    </path>
+                    <path d="M21 9v1">
+                    </path>
+                    <path d="M3 14v1">
+                    </path>
+                    <path d="M21 14v1">
+                    </path>
+                    <line x1="7" x2="15" y1="8" y2="8">
+                    </line>
+                    <line x1="7" x2="17" y1="12" y2="12">
+                    </line>
+                    <line x1="7" x2="13" y1="16" y2="16">
+                    </line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <footer class="flex flex-col justify-center bg-gray-50 mt-8 py-8">
+            <div class="flex justify-center align-middle text-lg">
+              <a href="#top" class="text-blue-500">
+                <span class="align-text-top inline-flex justify-center mr-0.25">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
+                    </path>
+                  </svg>
+                </span>
+                <span>Back to Top</span>
+              </a>
+            </div>
+            <div class="mt-2.5 text-center">PlatonicNav: Unveiling Semantic Correspondence in Navigation with Platonic Topological Maps</div>
+          </footer>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
