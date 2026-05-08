@@ -92,13 +92,17 @@
               </span>
             </p>
             <div class="mx-auto" style="width: 70%; max-width: 44.8rem;">
-              <div class="flex justify-center content-center relative">
+              <div id="teaser-player" class="flex justify-center content-center rounded-xl" style="position: relative; overflow: hidden;">
                 <video id="teaser-video" class="rounded-xl mx-auto w-full" playsinline preload="metadata" poster="video/teaser_poster.jpg">
                   <source src="video/teaser.mp4" type="video/mp4"/>
                 </video>
-                <button id="teaser-play-button" type="button" aria-label="Play teaser video" class="absolute inset-0 flex items-center justify-center">
-                  <span class="flex items-center justify-center rounded-full bg-white/85 text-stone-900 shadow-lg" style="width: 4.5rem; height: 4.5rem; font-size: 2rem; line-height: 1;">&#9654;</span>
-                </button>
+                <div id="teaser-controls" style="position: absolute; left: 0; right: 0; bottom: calc(1.75rem + 4px); display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem 1rem; color: white; background: rgba(0, 0, 0, 0.72); border-radius: 0.75rem; opacity: 0; transition: opacity 300ms ease; pointer-events: none;">
+                  <button id="teaser-play-button" type="button" aria-label="Play teaser video" style="display: flex; align-items: center; justify-content: center; width: 2.75rem; height: 2.75rem; flex: 0 0 2.75rem; border-radius: 9999px; background: rgba(255, 255, 255, 0.92); color: #1c1917; font-size: 1.25rem; line-height: 1; padding: 0;">&#9654;</button>
+                  <div style="flex: 1; height: 0.375rem; border-radius: 9999px; background: rgba(255, 255, 255, 0.3); overflow: hidden;">
+                    <div id="teaser-progress" style="width: 0%; height: 100%; background: white;"></div>
+                  </div>
+                  <span id="teaser-time" style="font-size: 0.875rem; line-height: 1.25rem; font-variant-numeric: tabular-nums;">0:00</span>
+                </div>
               </div>
               <div class="flex justify-center">
                 <p class="text-center text-lg !mt-0 !mb-2 mx-auto" style="max-width: 64rem;">
@@ -370,15 +374,82 @@
       </div>
     </div>
     <script>
+      const teaserPlayer = document.getElementById('teaser-player');
       const teaserVideo = document.getElementById('teaser-video');
+      const teaserControls = document.getElementById('teaser-controls');
       const teaserPlayButton = document.getElementById('teaser-play-button');
+      const teaserProgress = document.getElementById('teaser-progress');
+      const teaserTime = document.getElementById('teaser-time');
+      let teaserControlsTimer;
 
-      if (teaserVideo && teaserPlayButton) {
-        teaserPlayButton.addEventListener('click', () => {
+      const formatTeaserTime = (seconds) => {
+        if (!Number.isFinite(seconds)) return '0:00';
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = Math.floor(seconds % 60).toString().padStart(2, '0');
+        return `${minutes}:${remainingSeconds}`;
+      };
+
+      const showTeaserControls = () => {
+        if (!teaserControls) return;
+        teaserControls.style.opacity = '1';
+        teaserControls.style.pointerEvents = 'auto';
+        clearTimeout(teaserControlsTimer);
+        teaserControlsTimer = setTimeout(() => {
+          teaserControls.style.opacity = '0';
+          teaserControls.style.pointerEvents = 'none';
+        }, teaserVideo && teaserVideo.paused ? 2200 : 1400);
+      };
+
+      const hideTeaserControls = () => {
+        if (!teaserControls) return;
+        clearTimeout(teaserControlsTimer);
+        teaserControls.style.opacity = '0';
+        teaserControls.style.pointerEvents = 'none';
+      };
+
+      const toggleTeaserPlayback = () => {
+        if (!teaserVideo) return;
+        if (teaserVideo.paused) {
           teaserVideo.muted = false;
-          teaserVideo.controls = true;
           teaserVideo.play();
-          teaserPlayButton.style.display = 'none';
+        } else {
+          teaserVideo.pause();
+        }
+      };
+
+      if (teaserPlayer && teaserVideo && teaserControls && teaserPlayButton) {
+        teaserPlayButton.addEventListener('click', () => {
+          toggleTeaserPlayback();
+        });
+
+        teaserPlayer.addEventListener('click', (event) => {
+          if (event.target.closest('button')) return;
+          toggleTeaserPlayback();
+          showTeaserControls();
+        });
+
+        teaserPlayer.addEventListener('mouseenter', showTeaserControls);
+        teaserPlayer.addEventListener('mousemove', showTeaserControls);
+        teaserPlayer.addEventListener('mouseleave', hideTeaserControls);
+        teaserPlayer.addEventListener('touchstart', showTeaserControls, { passive: true });
+
+        teaserVideo.addEventListener('play', () => {
+          teaserPlayButton.innerHTML = '&#10074;&#10074;';
+          showTeaserControls();
+        });
+
+        teaserVideo.addEventListener('pause', () => {
+          teaserPlayButton.innerHTML = '&#9654;';
+          showTeaserControls();
+        });
+
+        teaserVideo.addEventListener('timeupdate', () => {
+          if (teaserProgress && Number.isFinite(teaserVideo.duration) && teaserVideo.duration > 0) {
+            teaserProgress.style.width = `${(teaserVideo.currentTime / teaserVideo.duration) * 100}%`;
+          }
+          if (teaserTime) {
+            teaserTime.textContent = formatTeaserTime(teaserVideo.currentTime);
+          }
         });
       }
     </script>
