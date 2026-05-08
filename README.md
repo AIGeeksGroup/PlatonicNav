@@ -1,2 +1,1 @@
-# PlatonicNav
-PlatonicNav: Unveiling Semantic Correspondence in Navigation with Platonic Topological Maps
+# PlatonicNav: Unveiling Semantic Correspondence in Navigation with Platonic Topological Maps
