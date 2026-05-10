@@ -1,0 +1,218 @@
+{
+  "candidate": {
+    "bm_query_phrase": "stairs",
+    "controller_final_distance": 0.9890099763870239,
+    "controller_max_steps": 500,
+    "controller_metadata": {
+      "camera fov": "79.00",
+      "distance_to_final_goal_from_start": "3.0277304649353027",
+      "final_distance": "0.9890099763870239",
+      "goal distance threshold": "1.0",
+      "goal position": "",
+      "goal_source": "topological",
+      "inferring_depth": "False",
+      "max steps": "500",
+      "method": "learnt",
+      "steer pid values": "[]",
+      "step": "55",
+      "success_status": "success",
+      "time_delta": "0.1",
+      "traversable categories": "",
+      "velocity_control": "nan"
+    },
+    "controller_step": 55,
+    "controller_success_status": "success",
+    "episode_id": 488,
+    "episode_key": "2azQ1b91cZZ_ep488",
+    "episode_name": "2azQ1b91cZZ_ep488",
+    "evaluation_row": {
+      "episode_id": "488",
+      "episode_key": "2azQ1b91cZZ_ep488",
+      "etpnav_distance_m": "",
+      "etpnav_path_length_m": "",
+      "etpnav_prediction_available": "False",
+      "etpnav_spl": "0.0",
+      "etpnav_success": "False",
+      "etpnav_success_basis": "missing_trajectory",
+      "instruction": "From here, head towards the stairs. Stop on the round rug next to the flowers.",
+      "platonic_collisions": "30",
+      "platonic_csv": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/2azQ1b91cZZ_ep488/20260510-131121_learnt_topological/2azQ1b91cZZ_ep488_learnt_topological/results.csv",
+      "platonic_distance_m": "0.0",
+      "platonic_path_length_m": "2.0272958621686357",
+      "platonic_spl": "1.0",
+      "platonic_success": "True",
+      "platonic_success_basis": "semantic_category",
+      "scene_id": "2azQ1b91cZZ",
+      "success_radius_m": "1.0",
+      "target_category": "stairs",
+      "target_phrase": "stairs",
+      "target_type": "landmark",
+      "teacher_final_path_length_m": "3.0"
+    },
+    "final_distance": 0.0,
+    "frame_count_from_results_csv": 55,
+    "goal_position": [
+      19.972000122070312,
+      3.5271100997924805,
+      0.43456199765205383
+    ],
+    "goal_text": "stairs",
+    "instruction": "From here, head towards the stairs. Stop on the round rug next to the flowers.",
+    "instruction_word_count": 15,
+    "metadata_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/2azQ1b91cZZ_ep488/20260510-131121_learnt_topological/2azQ1b91cZZ_ep488_learnt_topological/metadata.txt",
+    "path_ratio_to_teacher_final": 0.6757652873895452,
+    "platonic_collisions": 30,
+    "platonic_distance_m": 0.0,
+    "platonic_path_length_m": 2.0272958621686357,
+    "platonic_spl": 1.0,
+    "reference_path": [
+      [
+        17.320745745185473,
+        3.5271100997924805,
+        1.7601024680486703
+      ],
+      [
+        18.246599197387695,
+        3.5271100997924805,
+        1.5373799800872803
+      ],
+      [
+        19.972000122070312,
+        3.5271100997924805,
+        0.43456199765205383
+      ]
+    ],
+    "results_csv_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/2azQ1b91cZZ_ep488/20260510-131121_learnt_topological/2azQ1b91cZZ_ep488_learnt_topological/results.csv",
+    "results_dict_npz_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/2azQ1b91cZZ_ep488/20260510-131121_learnt_topological/2azQ1b91cZZ_ep488_learnt_topological/results_dict.npz",
+    "scene_glb": "/home/ywan0794/PlatonicNav/thought_experiment_round_2/data/scenes/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+    "scene_id": "2azQ1b91cZZ",
+    "selection_manifest_row": {
+      "bm_query_phrase": "stairs",
+      "easy_start_n_segments_back": 2,
+      "episode_id": 488,
+      "episode_key": "2azQ1b91cZZ_ep488",
+      "estimated_complexity": "simple",
+      "geodesic_distance_original_m": 9.143,
+      "goal_position": [
+        19.972000122070312,
+        3.5271100997924805,
+        0.43456199765205383
+      ],
+      "instruction": "From here, head towards the stairs. Stop on the round rug next to the flowers.",
+      "instruction_original": "Leave the room into the hall and go straight. Head towards the stairs. Stop on the round rug next to the flowers.",
+      "instruction_word_count": 15,
+      "reference_path": [
+        [
+          17.320745745185473,
+          3.5271100997924805,
+          1.7601024680486703
+        ],
+        [
+          18.246599197387695,
+          3.5271100997924805,
+          1.5373799800872803
+        ],
+        [
+          19.972000122070312,
+          3.5271100997924805,
+          0.43456199765205383
+        ]
+      ],
+      "scene_id": "2azQ1b91cZZ",
+      "scene_id_raw": "mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+      "selection_reason": "easy-start 3.0m; simple final path (3 waypoints, 0 turns); short clear target 'stairs' mapped to stairs",
+      "start_distance_setting": "easy3",
+      "start_position": [
+        17.320745745185473,
+        3.5271100997924805,
+        1.7601024680486703
+      ],
+      "start_rotation": [
+        0.0,
+        -0.6189156155830333,
+        0.0,
+        0.7854574850286137
+      ],
+      "target_category": "stairs",
+      "target_extractor": "ordered_keyword_last_high_priority",
+      "target_phrase": "stairs",
+      "target_priority": 4,
+      "target_type": "landmark",
+      "teacher_final_path_length_m": 3.0,
+      "teacher_path_length_m": 3.0,
+      "teacher_turn_count": 0,
+      "teacher_waypoint_count": 3,
+      "trajectory_id": 1940
+    },
+    "selection_reason": "easy-start 3.0m; simple final path (3 waypoints, 0 turns); short clear target 'stairs' mapped to stairs",
+    "start_position": [
+      17.320745745185473,
+      3.5271100997924805,
+      1.7601024680486703
+    ],
+    "success": true,
+    "success_basis": "semantic_category",
+    "success_radius_m": 1.0,
+    "success_status": "success",
+    "target_category": "stairs",
+    "target_phrase": "stairs",
+    "target_type": "landmark",
+    "teacher_final_path_length_m": 3.0,
+    "visualization_goal_position_source": "R2R-CE selection manifest; visualization/evaluation marker only, not used by PlatonicNav-BM policy or blind-match goal selection"
+  },
+  "canvas_size": [
+    1920,
+    1080
+  ],
+  "card_rect": [
+    160,
+    118,
+    960,
+    540
+  ],
+  "codec": "avc1",
+  "episode_name": "2azQ1b91cZZ_ep488",
+  "fps": 12,
+  "frame_count": 55,
+  "gpu_device_id": 0,
+  "presentation_wrapper": false,
+  "rank": 5,
+  "scene_dataset_config": "",
+  "status": "rendered",
+  "streams": [
+    "ego_rgb",
+    "depth",
+    "bev"
+  ],
+  "video_checks": {
+    "bev": {
+      "fourcc": "avc1",
+      "frame_count": 55,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/2azQ1b91cZZ_ep488__from_here_head_towards_the_stairs_stop_on_the_round_rug_next_to_the_flowers/bev.mp4",
+      "width": 1920
+    },
+    "depth": {
+      "fourcc": "avc1",
+      "frame_count": 55,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/2azQ1b91cZZ_ep488__from_here_head_towards_the_stairs_stop_on_the_round_rug_next_to_the_flowers/depth.mp4",
+      "width": 1920
+    },
+    "ego_rgb": {
+      "fourcc": "avc1",
+      "frame_count": 55,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/2azQ1b91cZZ_ep488__from_here_head_towards_the_stairs_stop_on_the_round_rug_next_to_the_flowers/ego_rgb.mp4",
+      "width": 1920
+    }
+  },
+  "video_paths": {
+    "bev": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/2azQ1b91cZZ_ep488__from_here_head_towards_the_stairs_stop_on_the_round_rug_next_to_the_flowers/bev.mp4",
+    "depth": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/2azQ1b91cZZ_ep488__from_here_head_towards_the_stairs_stop_on_the_round_rug_next_to_the_flowers/depth.mp4",
+    "ego_rgb": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/2azQ1b91cZZ_ep488__from_here_head_towards_the_stairs_stop_on_the_round_rug_next_to_the_flowers/ego_rgb.mp4"
+  }
+}

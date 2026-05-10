@@ -1,0 +1,228 @@
+{
+  "candidate": {
+    "bm_query_phrase": "table",
+    "controller_final_distance": 0.9819076061248779,
+    "controller_max_steps": 500,
+    "controller_metadata": {
+      "camera fov": "79.00",
+      "distance_to_final_goal_from_start": "2.994527578353882",
+      "final_distance": "0.9819076061248779",
+      "goal distance threshold": "1.0",
+      "goal position": "",
+      "goal_source": "topological",
+      "inferring_depth": "False",
+      "max steps": "500",
+      "method": "learnt",
+      "steer pid values": "[]",
+      "step": "52",
+      "success_status": "success",
+      "time_delta": "0.1",
+      "traversable categories": "",
+      "velocity_control": "nan"
+    },
+    "controller_step": 52,
+    "controller_success_status": "success",
+    "episode_id": 426,
+    "episode_key": "EU6Fwq7SyZv_ep426",
+    "episode_name": "EU6Fwq7SyZv_ep426",
+    "evaluation_row": {
+      "episode_id": "426",
+      "episode_key": "EU6Fwq7SyZv_ep426",
+      "etpnav_distance_m": "",
+      "etpnav_path_length_m": "",
+      "etpnav_prediction_available": "False",
+      "etpnav_spl": "0.0",
+      "etpnav_success": "False",
+      "etpnav_success_basis": "missing_trajectory",
+      "instruction": "From here, walk towards the desk in the office area. Stop next to the desk.",
+      "platonic_collisions": "0",
+      "platonic_csv": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/EU6Fwq7SyZv_ep426/20260510-134222_learnt_topological/EU6Fwq7SyZv_ep426_learnt_topological/results.csv",
+      "platonic_distance_m": "0.6217821585100772",
+      "platonic_path_length_m": "2.10232993696712",
+      "platonic_spl": "1.0",
+      "platonic_success": "True",
+      "platonic_success_basis": "semantic_category",
+      "scene_id": "EU6Fwq7SyZv",
+      "success_radius_m": "1.0",
+      "target_category": "table",
+      "target_phrase": "desk",
+      "target_type": "object",
+      "teacher_final_path_length_m": "3.0"
+    },
+    "final_distance": 0.6217821585100772,
+    "frame_count_from_results_csv": 52,
+    "goal_position": [
+      10.679300308227539,
+      0.018061161041259766,
+      8.551050186157227
+    ],
+    "goal_text": "desk",
+    "instruction": "From here, walk towards the desk in the office area. Stop next to the desk.",
+    "instruction_word_count": 15,
+    "metadata_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/EU6Fwq7SyZv_ep426/20260510-134222_learnt_topological/EU6Fwq7SyZv_ep426_learnt_topological/metadata.txt",
+    "path_ratio_to_teacher_final": 0.7007766456557066,
+    "platonic_collisions": 0,
+    "platonic_distance_m": 0.6217821585100772,
+    "platonic_path_length_m": 2.10232993696712,
+    "platonic_spl": 1.0,
+    "reference_path": [
+      [
+        7.687726405875423,
+        0.06356189152533041,
+        8.426103550844832
+      ],
+      [
+        7.775400161743164,
+        0.06606321036815643,
+        8.427889823913574
+      ],
+      [
+        9.428110122680664,
+        0.018061161041259766,
+        8.412870407104492
+      ],
+      [
+        10.679300308227539,
+        0.018061161041259766,
+        8.551050186157227
+      ]
+    ],
+    "results_csv_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/EU6Fwq7SyZv_ep426/20260510-134222_learnt_topological/EU6Fwq7SyZv_ep426_learnt_topological/results.csv",
+    "results_dict_npz_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/EU6Fwq7SyZv_ep426/20260510-134222_learnt_topological/EU6Fwq7SyZv_ep426_learnt_topological/results_dict.npz",
+    "scene_glb": "/home/ywan0794/PlatonicNav/thought_experiment_round_2/data/scenes/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+    "scene_id": "EU6Fwq7SyZv",
+    "selection_manifest_row": {
+      "bm_query_phrase": "table",
+      "easy_start_n_segments_back": 3,
+      "episode_id": 426,
+      "episode_key": "EU6Fwq7SyZv_ep426",
+      "estimated_complexity": "simple",
+      "geodesic_distance_original_m": 6.05,
+      "goal_position": [
+        10.679300308227539,
+        0.018061161041259766,
+        8.551050186157227
+      ],
+      "instruction": "From here, walk towards the desk in the office area. Stop next to the desk.",
+      "instruction_original": "Walk towards the desk in the office area. Stop next to the desk.",
+      "instruction_word_count": 15,
+      "reference_path": [
+        [
+          7.687726405875423,
+          0.06356189152533041,
+          8.426103550844832
+        ],
+        [
+          7.775400161743164,
+          0.06606321036815643,
+          8.427889823913574
+        ],
+        [
+          9.428110122680664,
+          0.018061161041259766,
+          8.412870407104492
+        ],
+        [
+          10.679300308227539,
+          0.018061161041259766,
+          8.551050186157227
+        ]
+      ],
+      "scene_id": "EU6Fwq7SyZv",
+      "scene_id_raw": "mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+      "selection_reason": "easy-start 3.0m; simple final path (4 waypoints, 0 turns); short clear target 'desk' mapped to table",
+      "start_distance_setting": "easy3",
+      "start_position": [
+        7.687726405875423,
+        0.06356189152533041,
+        8.426103550844832
+      ],
+      "start_rotation": [
+        0.0,
+        -0.7142723092436476,
+        0.0,
+        0.6998678934254285
+      ],
+      "target_category": "table",
+      "target_extractor": "ordered_keyword_last_high_priority",
+      "target_phrase": "desk",
+      "target_priority": 4,
+      "target_type": "object",
+      "teacher_final_path_length_m": 3.0,
+      "teacher_path_length_m": 3.0,
+      "teacher_turn_count": 0,
+      "teacher_waypoint_count": 4,
+      "trajectory_id": 1677
+    },
+    "selection_reason": "easy-start 3.0m; simple final path (4 waypoints, 0 turns); short clear target 'desk' mapped to table",
+    "start_position": [
+      7.687726405875423,
+      0.06356189152533041,
+      8.426103550844832
+    ],
+    "success": true,
+    "success_basis": "semantic_category",
+    "success_radius_m": 1.0,
+    "success_status": "success",
+    "target_category": "table",
+    "target_phrase": "desk",
+    "target_type": "object",
+    "teacher_final_path_length_m": 3.0,
+    "visualization_goal_position_source": "R2R-CE selection manifest; visualization/evaluation marker only, not used by PlatonicNav-BM policy or blind-match goal selection"
+  },
+  "canvas_size": [
+    1920,
+    1080
+  ],
+  "card_rect": [
+    160,
+    118,
+    960,
+    540
+  ],
+  "codec": "avc1",
+  "episode_name": "EU6Fwq7SyZv_ep426",
+  "fps": 12,
+  "frame_count": 52,
+  "gpu_device_id": 0,
+  "presentation_wrapper": false,
+  "rank": 5,
+  "scene_dataset_config": "",
+  "status": "rendered",
+  "streams": [
+    "ego_rgb",
+    "depth",
+    "bev"
+  ],
+  "video_checks": {
+    "bev": {
+      "fourcc": "avc1",
+      "frame_count": 52,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/EU6Fwq7SyZv_ep426__from_here_walk_towards_the_desk_in_the_office_area_stop_next_to_the_desk/bev.mp4",
+      "width": 1920
+    },
+    "depth": {
+      "fourcc": "avc1",
+      "frame_count": 52,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/EU6Fwq7SyZv_ep426__from_here_walk_towards_the_desk_in_the_office_area_stop_next_to_the_desk/depth.mp4",
+      "width": 1920
+    },
+    "ego_rgb": {
+      "fourcc": "avc1",
+      "frame_count": 52,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/EU6Fwq7SyZv_ep426__from_here_walk_towards_the_desk_in_the_office_area_stop_next_to_the_desk/ego_rgb.mp4",
+      "width": 1920
+    }
+  },
+  "video_paths": {
+    "bev": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/EU6Fwq7SyZv_ep426__from_here_walk_towards_the_desk_in_the_office_area_stop_next_to_the_desk/bev.mp4",
+    "depth": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/EU6Fwq7SyZv_ep426__from_here_walk_towards_the_desk_in_the_office_area_stop_next_to_the_desk/depth.mp4",
+    "ego_rgb": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/EU6Fwq7SyZv_ep426__from_here_walk_towards_the_desk_in_the_office_area_stop_next_to_the_desk/ego_rgb.mp4"
+  }
+}

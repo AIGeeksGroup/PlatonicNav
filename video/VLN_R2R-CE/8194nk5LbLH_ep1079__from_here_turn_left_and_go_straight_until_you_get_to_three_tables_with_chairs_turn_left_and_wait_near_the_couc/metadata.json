@@ -1,0 +1,208 @@
+{
+  "candidate": {
+    "bm_query_phrase": "sofa",
+    "controller_final_distance": 0.9968055486679077,
+    "controller_max_steps": 500,
+    "controller_metadata": {
+      "camera fov": "79.00",
+      "distance_to_final_goal_from_start": "3.0847644805908203",
+      "final_distance": "0.9968055486679077",
+      "goal distance threshold": "1.0",
+      "goal position": "",
+      "goal_source": "topological",
+      "inferring_depth": "False",
+      "max steps": "500",
+      "method": "learnt",
+      "steer pid values": "[]",
+      "step": "49",
+      "success_status": "success",
+      "time_delta": "0.1",
+      "traversable categories": "",
+      "velocity_control": "nan"
+    },
+    "controller_step": 49,
+    "controller_success_status": "success",
+    "episode_id": 1079,
+    "episode_key": "8194nk5LbLH_ep1079",
+    "episode_name": "8194nk5LbLH_ep1079",
+    "evaluation_row": {
+      "episode_id": "1079",
+      "episode_key": "8194nk5LbLH_ep1079",
+      "etpnav_distance_m": "",
+      "etpnav_path_length_m": "",
+      "etpnav_prediction_available": "False",
+      "etpnav_spl": "0.0",
+      "etpnav_success": "False",
+      "etpnav_success_basis": "missing_trajectory",
+      "instruction": "From here, turn left and go straight until you get to three tables with chairs. Turn left and wait near the couch.",
+      "platonic_collisions": "9",
+      "platonic_csv": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/8194nk5LbLH_ep1079/20260510-133936_learnt_topological/8194nk5LbLH_ep1079_learnt_topological/results.csv",
+      "platonic_distance_m": "0.21303534507751465",
+      "platonic_path_length_m": "2.2955847068583033",
+      "platonic_spl": "1.0",
+      "platonic_success": "True",
+      "platonic_success_basis": "semantic_category",
+      "scene_id": "8194nk5LbLH",
+      "success_radius_m": "1.0",
+      "target_category": "sofa",
+      "target_phrase": "couch",
+      "target_type": "object",
+      "teacher_final_path_length_m": "3.0"
+    },
+    "final_distance": 0.21303534507751465,
+    "frame_count_from_results_csv": 49,
+    "goal_position": [
+      -1.6894099712371826,
+      0.0985960066318512,
+      5.379079818725586
+    ],
+    "goal_text": "couch",
+    "instruction": "From here, turn left and go straight until you get to three tables with chairs. Turn left and wait near the couch.",
+    "instruction_word_count": 22,
+    "metadata_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/8194nk5LbLH_ep1079/20260510-133936_learnt_topological/8194nk5LbLH_ep1079_learnt_topological/metadata.txt",
+    "path_ratio_to_teacher_final": 0.7651949022861011,
+    "platonic_collisions": 9,
+    "platonic_distance_m": 0.21303534507751465,
+    "platonic_path_length_m": 2.2955847068583033,
+    "platonic_spl": 1.0,
+    "reference_path": [
+      [
+        -3.8594411845651306,
+        0.0985960066318512,
+        3.307615473586517
+      ],
+      [
+        -1.6894099712371826,
+        0.0985960066318512,
+        5.379079818725586
+      ]
+    ],
+    "results_csv_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/8194nk5LbLH_ep1079/20260510-133936_learnt_topological/8194nk5LbLH_ep1079_learnt_topological/results.csv",
+    "results_dict_npz_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/8194nk5LbLH_ep1079/20260510-133936_learnt_topological/8194nk5LbLH_ep1079_learnt_topological/results_dict.npz",
+    "scene_glb": "/home/ywan0794/PlatonicNav/thought_experiment_round_2/data/scenes/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+    "scene_id": "8194nk5LbLH",
+    "selection_manifest_row": {
+      "bm_query_phrase": "sofa",
+      "easy_start_n_segments_back": 1,
+      "episode_id": 1079,
+      "episode_key": "8194nk5LbLH_ep1079",
+      "estimated_complexity": "simple",
+      "geodesic_distance_original_m": 8.651,
+      "goal_position": [
+        -1.6894099712371826,
+        0.0985960066318512,
+        5.379079818725586
+      ],
+      "instruction": "From here, turn left and go straight until you get to three tables with chairs. Turn left and wait near the couch.",
+      "instruction_original": "Walk straight toward the bar with the chairs/stool. Turn left and go straight until you get to three tables with chairs. Turn left and wait near the couch.",
+      "instruction_word_count": 22,
+      "reference_path": [
+        [
+          -3.8594411845651306,
+          0.0985960066318512,
+          3.307615473586517
+        ],
+        [
+          -1.6894099712371826,
+          0.0985960066318512,
+          5.379079818725586
+        ]
+      ],
+      "scene_id": "8194nk5LbLH",
+      "scene_id_raw": "mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+      "selection_reason": "easy-start 3.0m; simple final path (2 waypoints, 0 turns); short clear target 'couch' mapped to sofa",
+      "start_distance_setting": "easy3",
+      "start_position": [
+        -3.8594411845651306,
+        0.0985960066318512,
+        3.307615473586517
+      ],
+      "start_rotation": [
+        0.0,
+        -0.9193715557505454,
+        0.0,
+        0.3933903182296456
+      ],
+      "target_category": "sofa",
+      "target_extractor": "ordered_keyword_last_high_priority",
+      "target_phrase": "couch",
+      "target_priority": 4,
+      "target_type": "object",
+      "teacher_final_path_length_m": 3.0,
+      "teacher_path_length_m": 3.0,
+      "teacher_turn_count": 0,
+      "teacher_waypoint_count": 2,
+      "trajectory_id": 4332
+    },
+    "selection_reason": "easy-start 3.0m; simple final path (2 waypoints, 0 turns); short clear target 'couch' mapped to sofa",
+    "start_position": [
+      -3.8594411845651306,
+      0.0985960066318512,
+      3.307615473586517
+    ],
+    "success": true,
+    "success_basis": "semantic_category",
+    "success_radius_m": 1.0,
+    "success_status": "success",
+    "target_category": "sofa",
+    "target_phrase": "couch",
+    "target_type": "object",
+    "teacher_final_path_length_m": 3.0,
+    "visualization_goal_position_source": "R2R-CE selection manifest; visualization/evaluation marker only, not used by PlatonicNav-BM policy or blind-match goal selection"
+  },
+  "canvas_size": [
+    1920,
+    1080
+  ],
+  "card_rect": [
+    160,
+    118,
+    960,
+    540
+  ],
+  "codec": "avc1",
+  "episode_name": "8194nk5LbLH_ep1079",
+  "fps": 12,
+  "frame_count": 49,
+  "gpu_device_id": 0,
+  "presentation_wrapper": false,
+  "rank": 8,
+  "scene_dataset_config": "",
+  "status": "rendered",
+  "streams": [
+    "ego_rgb",
+    "depth",
+    "bev"
+  ],
+  "video_checks": {
+    "bev": {
+      "fourcc": "avc1",
+      "frame_count": 49,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/8194nk5LbLH_ep1079__from_here_turn_left_and_go_straight_until_you_get_to_three_tables_with_chairs_turn_left_and_wait_near_the_couc/bev.mp4",
+      "width": 1920
+    },
+    "depth": {
+      "fourcc": "avc1",
+      "frame_count": 49,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/8194nk5LbLH_ep1079__from_here_turn_left_and_go_straight_until_you_get_to_three_tables_with_chairs_turn_left_and_wait_near_the_couc/depth.mp4",
+      "width": 1920
+    },
+    "ego_rgb": {
+      "fourcc": "avc1",
+      "frame_count": 49,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/8194nk5LbLH_ep1079__from_here_turn_left_and_go_straight_until_you_get_to_three_tables_with_chairs_turn_left_and_wait_near_the_couc/ego_rgb.mp4",
+      "width": 1920
+    }
+  },
+  "video_paths": {
+    "bev": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/8194nk5LbLH_ep1079__from_here_turn_left_and_go_straight_until_you_get_to_three_tables_with_chairs_turn_left_and_wait_near_the_couc/bev.mp4",
+    "depth": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/8194nk5LbLH_ep1079__from_here_turn_left_and_go_straight_until_you_get_to_three_tables_with_chairs_turn_left_and_wait_near_the_couc/depth.mp4",
+    "ego_rgb": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/8194nk5LbLH_ep1079__from_here_turn_left_and_go_straight_until_you_get_to_three_tables_with_chairs_turn_left_and_wait_near_the_couc/ego_rgb.mp4"
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "candidate": {
+    "bm_query_phrase": "table",
+    "controller_final_distance": 0.9834142923355103,
+    "controller_max_steps": 500,
+    "controller_metadata": {
+      "camera fov": "79.00",
+      "distance_to_final_goal_from_start": "3.0105667114257812",
+      "final_distance": "0.9834142923355103",
+      "goal distance threshold": "1.0",
+      "goal position": "",
+      "goal_source": "topological",
+      "inferring_depth": "False",
+      "max steps": "500",
+      "method": "learnt",
+      "steer pid values": "[]",
+      "step": "50",
+      "success_status": "success",
+      "time_delta": "0.1",
+      "traversable categories": "",
+      "velocity_control": "nan"
+    },
+    "controller_step": 50,
+    "controller_success_status": "success",
+    "episode_id": 1489,
+    "episode_key": "EU6Fwq7SyZv_ep1489",
+    "episode_name": "EU6Fwq7SyZv_ep1489",
+    "evaluation_row": {
+      "episode_id": "1489",
+      "episode_key": "EU6Fwq7SyZv_ep1489",
+      "etpnav_distance_m": "",
+      "etpnav_path_length_m": "",
+      "etpnav_prediction_available": "False",
+      "etpnav_spl": "0.0",
+      "etpnav_success": "False",
+      "etpnav_success_basis": "missing_trajectory",
+      "instruction": "From here, walk into the kitchen, around the dining table to the buffet. Stop and wait there.",
+      "platonic_collisions": "25",
+      "platonic_csv": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/EU6Fwq7SyZv_ep1489/20260510-135154_learnt_topological/EU6Fwq7SyZv_ep1489_learnt_topological/results.csv",
+      "platonic_distance_m": "0.3285388946533203",
+      "platonic_path_length_m": "2.007847841948461",
+      "platonic_spl": "1.0",
+      "platonic_success": "True",
+      "platonic_success_basis": "semantic_category",
+      "scene_id": "EU6Fwq7SyZv",
+      "success_radius_m": "1.0",
+      "target_category": "table",
+      "target_phrase": "table",
+      "target_type": "object",
+      "teacher_final_path_length_m": "3.0"
+    },
+    "final_distance": 0.3285388946533203,
+    "frame_count_from_results_csv": 50,
+    "goal_position": [
+      -1.1243000030517578,
+      0.018061161041259766,
+      6.61775016784668
+    ],
+    "goal_text": "table",
+    "instruction": "From here, walk into the kitchen, around the dining table to the buffet. Stop and wait there.",
+    "instruction_word_count": 17,
+    "metadata_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/EU6Fwq7SyZv_ep1489/20260510-135154_learnt_topological/EU6Fwq7SyZv_ep1489_learnt_topological/metadata.txt",
+    "path_ratio_to_teacher_final": 0.6692826139828204,
+    "platonic_collisions": 25,
+    "platonic_distance_m": 0.3285388946533203,
+    "platonic_path_length_m": 2.007847841948461,
+    "platonic_spl": 1.0,
+    "reference_path": [
+      [
+        -1.6630155617970743,
+        0.018061161041259766,
+        3.6698549241845453
+      ],
+      [
+        -1.6468600034713745,
+        0.018061161041259766,
+        4.0034098625183105
+      ],
+      [
+        -1.1243000030517578,
+        0.018061161041259766,
+        6.61775016784668
+      ]
+    ],
+    "results_csv_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/EU6Fwq7SyZv_ep1489/20260510-135154_learnt_topological/EU6Fwq7SyZv_ep1489_learnt_topological/results.csv",
+    "results_dict_npz_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/EU6Fwq7SyZv_ep1489/20260510-135154_learnt_topological/EU6Fwq7SyZv_ep1489_learnt_topological/results_dict.npz",
+    "scene_glb": "/home/ywan0794/PlatonicNav/thought_experiment_round_2/data/scenes/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+    "scene_id": "EU6Fwq7SyZv",
+    "selection_manifest_row": {
+      "bm_query_phrase": "table",
+      "easy_start_n_segments_back": 2,
+      "episode_id": 1489,
+      "episode_key": "EU6Fwq7SyZv_ep1489",
+      "estimated_complexity": "simple",
+      "geodesic_distance_original_m": 6.404,
+      "goal_position": [
+        -1.1243000030517578,
+        0.018061161041259766,
+        6.61775016784668
+      ],
+      "instruction": "From here, walk into the kitchen, around the dining table to the buffet. Stop and wait there.",
+      "instruction_original": "Walk into the kitchen, around the dining table to the buffet. Stop and wait there.",
+      "instruction_word_count": 17,
+      "reference_path": [
+        [
+          -1.6630155617970743,
+          0.018061161041259766,
+          3.6698549241845453
+        ],
+        [
+          -1.6468600034713745,
+          0.018061161041259766,
+          4.0034098625183105
+        ],
+        [
+          -1.1243000030517578,
+          0.018061161041259766,
+          6.61775016784668
+        ]
+      ],
+      "scene_id": "EU6Fwq7SyZv",
+      "scene_id_raw": "mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+      "selection_reason": "easy-start 3.0m; simple final path (3 waypoints, 0 turns); short clear target 'table' mapped to table",
+      "start_distance_setting": "easy3",
+      "start_position": [
+        -1.6630155617970743,
+        0.018061161041259766,
+        3.6698549241845453
+      ],
+      "start_rotation": [
+        0.0,
+        -0.9997072347701952,
+        0.0,
+        0.02419596553415204
+      ],
+      "target_category": "table",
+      "target_extractor": "ordered_keyword_last_high_priority",
+      "target_phrase": "table",
+      "target_priority": 4,
+      "target_type": "object",
+      "teacher_final_path_length_m": 3.0,
+      "teacher_path_length_m": 3.0,
+      "teacher_turn_count": 0,
+      "teacher_waypoint_count": 3,
+      "trajectory_id": 5880
+    },
+    "selection_reason": "easy-start 3.0m; simple final path (3 waypoints, 0 turns); short clear target 'table' mapped to table",
+    "start_position": [
+      -1.6630155617970743,
+      0.018061161041259766,
+      3.6698549241845453
+    ],
+    "success": true,
+    "success_basis": "semantic_category",
+    "success_radius_m": 1.0,
+    "success_status": "success",
+    "target_category": "table",
+    "target_phrase": "table",
+    "target_type": "object",
+    "teacher_final_path_length_m": 3.0,
+    "visualization_goal_position_source": "R2R-CE selection manifest; visualization/evaluation marker only, not used by PlatonicNav-BM policy or blind-match goal selection"
+  },
+  "canvas_size": [
+    1920,
+    1080
+  ],
+  "card_rect": [
+    160,
+    118,
+    960,
+    540
+  ],
+  "codec": "avc1",
+  "episode_name": "EU6Fwq7SyZv_ep1489",
+  "fps": 12,
+  "frame_count": 50,
+  "gpu_device_id": 0,
+  "presentation_wrapper": false,
+  "rank": 7,
+  "scene_dataset_config": "",
+  "status": "rendered",
+  "streams": [
+    "ego_rgb",
+    "depth",
+    "bev"
+  ],
+  "video_checks": {
+    "bev": {
+      "fourcc": "avc1",
+      "frame_count": 50,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/EU6Fwq7SyZv_ep1489__from_here_walk_into_the_kitchen_around_the_dining_table_to_the_buffet_stop_and_wait_there/bev.mp4",
+      "width": 1920
+    },
+    "depth": {
+      "fourcc": "avc1",
+      "frame_count": 50,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/EU6Fwq7SyZv_ep1489__from_here_walk_into_the_kitchen_around_the_dining_table_to_the_buffet_stop_and_wait_there/depth.mp4",
+      "width": 1920
+    },
+    "ego_rgb": {
+      "fourcc": "avc1",
+      "frame_count": 50,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/EU6Fwq7SyZv_ep1489__from_here_walk_into_the_kitchen_around_the_dining_table_to_the_buffet_stop_and_wait_there/ego_rgb.mp4",
+      "width": 1920
+    }
+  },
+  "video_paths": {
+    "bev": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/EU6Fwq7SyZv_ep1489__from_here_walk_into_the_kitchen_around_the_dining_table_to_the_buffet_stop_and_wait_there/bev.mp4",
+    "depth": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/EU6Fwq7SyZv_ep1489__from_here_walk_into_the_kitchen_around_the_dining_table_to_the_buffet_stop_and_wait_there/depth.mp4",
+    "ego_rgb": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/EU6Fwq7SyZv_ep1489__from_here_walk_into_the_kitchen_around_the_dining_table_to_the_buffet_stop_and_wait_there/ego_rgb.mp4"
+  }
+}

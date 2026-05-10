@@ -1,0 +1,218 @@
+{
+  "candidate": {
+    "bm_query_phrase": "fireplace",
+    "controller_final_distance": 0.9839531183242798,
+    "controller_max_steps": 500,
+    "controller_metadata": {
+      "camera fov": "79.00",
+      "distance_to_final_goal_from_start": "2.8725154399871826",
+      "final_distance": "0.9839531183242798",
+      "goal distance threshold": "1.0",
+      "goal position": "",
+      "goal_source": "topological",
+      "inferring_depth": "False",
+      "max steps": "500",
+      "method": "learnt",
+      "steer pid values": "[]",
+      "step": "57",
+      "success_status": "success",
+      "time_delta": "0.1",
+      "traversable categories": "",
+      "velocity_control": "nan"
+    },
+    "controller_step": 57,
+    "controller_success_status": "success",
+    "episode_id": 396,
+    "episode_key": "2azQ1b91cZZ_ep396",
+    "episode_name": "2azQ1b91cZZ_ep396",
+    "evaluation_row": {
+      "episode_id": "396",
+      "episode_key": "2azQ1b91cZZ_ep396",
+      "etpnav_distance_m": "",
+      "etpnav_path_length_m": "",
+      "etpnav_prediction_available": "False",
+      "etpnav_spl": "0.0",
+      "etpnav_success": "False",
+      "etpnav_success_basis": "missing_trajectory",
+      "instruction": "From here, walk to the front of the fireplace.",
+      "platonic_collisions": "1",
+      "platonic_csv": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/2azQ1b91cZZ_ep396/20260510-130858_learnt_topological/2azQ1b91cZZ_ep396_learnt_topological/results.csv",
+      "platonic_distance_m": "0.8573379516601562",
+      "platonic_path_length_m": "2.376407503886096",
+      "platonic_spl": "1.0",
+      "platonic_success": "True",
+      "platonic_success_basis": "semantic_category",
+      "scene_id": "2azQ1b91cZZ",
+      "success_radius_m": "1.0",
+      "target_category": "fireplace",
+      "target_phrase": "fireplace",
+      "target_type": "landmark",
+      "teacher_final_path_length_m": "3.0"
+    },
+    "final_distance": 0.8573379516601562,
+    "frame_count_from_results_csv": 57,
+    "goal_position": [
+      20.368799209594727,
+      0.12711000442504883,
+      5.6160101890563965
+    ],
+    "goal_text": "fireplace",
+    "instruction": "From here, walk to the front of the fireplace.",
+    "instruction_word_count": 9,
+    "metadata_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/2azQ1b91cZZ_ep396/20260510-130858_learnt_topological/2azQ1b91cZZ_ep396_learnt_topological/metadata.txt",
+    "path_ratio_to_teacher_final": 0.7921358346286986,
+    "platonic_collisions": 1,
+    "platonic_distance_m": 0.8573379516601562,
+    "platonic_path_length_m": 2.376407503886096,
+    "platonic_spl": 1.0,
+    "reference_path": [
+      [
+        18.143807267524178,
+        0.12711000442504883,
+        7.137881965895314
+      ],
+      [
+        19.527999877929688,
+        0.12711000442504883,
+        6.986100196838379
+      ],
+      [
+        20.368799209594727,
+        0.12711000442504883,
+        5.6160101890563965
+      ]
+    ],
+    "results_csv_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/2azQ1b91cZZ_ep396/20260510-130858_learnt_topological/2azQ1b91cZZ_ep396_learnt_topological/results.csv",
+    "results_dict_npz_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/2azQ1b91cZZ_ep396/20260510-130858_learnt_topological/2azQ1b91cZZ_ep396_learnt_topological/results_dict.npz",
+    "scene_glb": "/home/ywan0794/PlatonicNav/thought_experiment_round_2/data/scenes/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+    "scene_id": "2azQ1b91cZZ",
+    "selection_manifest_row": {
+      "bm_query_phrase": "fireplace",
+      "easy_start_n_segments_back": 2,
+      "episode_id": 396,
+      "episode_key": "2azQ1b91cZZ_ep396",
+      "estimated_complexity": "simple",
+      "geodesic_distance_original_m": 6.377,
+      "goal_position": [
+        20.368799209594727,
+        0.12711000442504883,
+        5.6160101890563965
+      ],
+      "instruction": "From here, walk to the front of the fireplace.",
+      "instruction_original": "Walk to the front of the fireplace.",
+      "instruction_word_count": 9,
+      "reference_path": [
+        [
+          18.143807267524178,
+          0.12711000442504883,
+          7.137881965895314
+        ],
+        [
+          19.527999877929688,
+          0.12711000442504883,
+          6.986100196838379
+        ],
+        [
+          20.368799209594727,
+          0.12711000442504883,
+          5.6160101890563965
+        ]
+      ],
+      "scene_id": "2azQ1b91cZZ",
+      "scene_id_raw": "mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+      "selection_reason": "easy-start 3.0m; simple final path (3 waypoints, 1 turns); short clear target 'fireplace' mapped to fireplace",
+      "start_distance_setting": "easy3",
+      "start_position": [
+        18.143807267524178,
+        0.12711000442504883,
+        7.137881965895314
+      ],
+      "start_rotation": [
+        0.0,
+        -0.6674577513410157,
+        0.0,
+        0.7446476684814066
+      ],
+      "target_category": "fireplace",
+      "target_extractor": "ordered_keyword_last_high_priority",
+      "target_phrase": "fireplace",
+      "target_priority": 4,
+      "target_type": "landmark",
+      "teacher_final_path_length_m": 3.0,
+      "teacher_path_length_m": 3.0,
+      "teacher_turn_count": 1,
+      "teacher_waypoint_count": 3,
+      "trajectory_id": 1581
+    },
+    "selection_reason": "easy-start 3.0m; simple final path (3 waypoints, 1 turns); short clear target 'fireplace' mapped to fireplace",
+    "start_position": [
+      18.143807267524178,
+      0.12711000442504883,
+      7.137881965895314
+    ],
+    "success": true,
+    "success_basis": "semantic_category",
+    "success_radius_m": 1.0,
+    "success_status": "success",
+    "target_category": "fireplace",
+    "target_phrase": "fireplace",
+    "target_type": "landmark",
+    "teacher_final_path_length_m": 3.0,
+    "visualization_goal_position_source": "R2R-CE selection manifest; visualization/evaluation marker only, not used by PlatonicNav-BM policy or blind-match goal selection"
+  },
+  "canvas_size": [
+    1920,
+    1080
+  ],
+  "card_rect": [
+    160,
+    118,
+    960,
+    540
+  ],
+  "codec": "avc1",
+  "episode_name": "2azQ1b91cZZ_ep396",
+  "fps": 12,
+  "frame_count": 57,
+  "gpu_device_id": 0,
+  "presentation_wrapper": false,
+  "rank": 1,
+  "scene_dataset_config": "",
+  "status": "rendered",
+  "streams": [
+    "ego_rgb",
+    "depth",
+    "bev"
+  ],
+  "video_checks": {
+    "bev": {
+      "fourcc": "avc1",
+      "frame_count": 57,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/2azQ1b91cZZ_ep396__from_here_walk_to_the_front_of_the_fireplace/bev.mp4",
+      "width": 1920
+    },
+    "depth": {
+      "fourcc": "avc1",
+      "frame_count": 57,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/2azQ1b91cZZ_ep396__from_here_walk_to_the_front_of_the_fireplace/depth.mp4",
+      "width": 1920
+    },
+    "ego_rgb": {
+      "fourcc": "avc1",
+      "frame_count": 57,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/2azQ1b91cZZ_ep396__from_here_walk_to_the_front_of_the_fireplace/ego_rgb.mp4",
+      "width": 1920
+    }
+  },
+  "video_paths": {
+    "bev": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/2azQ1b91cZZ_ep396__from_here_walk_to_the_front_of_the_fireplace/bev.mp4",
+    "depth": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/2azQ1b91cZZ_ep396__from_here_walk_to_the_front_of_the_fireplace/depth.mp4",
+    "ego_rgb": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/2azQ1b91cZZ_ep396__from_here_walk_to_the_front_of_the_fireplace/ego_rgb.mp4"
+  }
+}

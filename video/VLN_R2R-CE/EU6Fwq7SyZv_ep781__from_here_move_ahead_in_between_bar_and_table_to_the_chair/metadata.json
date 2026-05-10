@@ -1,0 +1,228 @@
+{
+  "candidate": {
+    "bm_query_phrase": "chair",
+    "controller_final_distance": 0.9886341691017151,
+    "controller_max_steps": 500,
+    "controller_metadata": {
+      "camera fov": "79.00",
+      "distance_to_final_goal_from_start": "2.984773874282837",
+      "final_distance": "0.9886341691017151",
+      "goal distance threshold": "1.0",
+      "goal position": "",
+      "goal_source": "topological",
+      "inferring_depth": "False",
+      "max steps": "500",
+      "method": "learnt",
+      "steer pid values": "[]",
+      "step": "49",
+      "success_status": "success",
+      "time_delta": "0.1",
+      "traversable categories": "",
+      "velocity_control": "nan"
+    },
+    "controller_step": 49,
+    "controller_success_status": "success",
+    "episode_id": 781,
+    "episode_key": "EU6Fwq7SyZv_ep781",
+    "episode_name": "EU6Fwq7SyZv_ep781",
+    "evaluation_row": {
+      "episode_id": "781",
+      "episode_key": "EU6Fwq7SyZv_ep781",
+      "etpnav_distance_m": "",
+      "etpnav_path_length_m": "",
+      "etpnav_prediction_available": "False",
+      "etpnav_spl": "0.0",
+      "etpnav_success": "False",
+      "etpnav_success_basis": "missing_trajectory",
+      "instruction": "From here, move ahead in between bar and table to the chair.",
+      "platonic_collisions": "1",
+      "platonic_csv": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/EU6Fwq7SyZv_ep781/20260510-135053_learnt_topological/EU6Fwq7SyZv_ep781_learnt_topological/results.csv",
+      "platonic_distance_m": "0.0",
+      "platonic_path_length_m": "2.0955626535217853",
+      "platonic_spl": "1.0",
+      "platonic_success": "True",
+      "platonic_success_basis": "semantic_category",
+      "scene_id": "EU6Fwq7SyZv",
+      "success_radius_m": "1.0",
+      "target_category": "chair",
+      "target_phrase": "chair",
+      "target_type": "object",
+      "teacher_final_path_length_m": "3.0"
+    },
+    "final_distance": 0.0,
+    "frame_count_from_results_csv": 49,
+    "goal_position": [
+      10.137900352478027,
+      3.6180613040924072,
+      2.3435800075531006
+    ],
+    "goal_text": "chair",
+    "instruction": "From here, move ahead in between bar and table to the chair.",
+    "instruction_word_count": 12,
+    "metadata_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/EU6Fwq7SyZv_ep781/20260510-135053_learnt_topological/EU6Fwq7SyZv_ep781_learnt_topological/metadata.txt",
+    "path_ratio_to_teacher_final": 0.6985208845072618,
+    "platonic_collisions": 1,
+    "platonic_distance_m": 0.0,
+    "platonic_path_length_m": 2.0955626535217853,
+    "platonic_spl": 1.0,
+    "reference_path": [
+      [
+        9.9904753728255,
+        3.6180613040924072,
+        5.324710978166328
+      ],
+      [
+        10.005999565124512,
+        3.6180613040924072,
+        5.137619972229004
+      ],
+      [
+        9.929570198059082,
+        3.6180613040924072,
+        3.672179937362671
+      ],
+      [
+        10.137900352478027,
+        3.6180613040924072,
+        2.3435800075531006
+      ]
+    ],
+    "results_csv_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/EU6Fwq7SyZv_ep781/20260510-135053_learnt_topological/EU6Fwq7SyZv_ep781_learnt_topological/results.csv",
+    "results_dict_npz_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/EU6Fwq7SyZv_ep781/20260510-135053_learnt_topological/EU6Fwq7SyZv_ep781_learnt_topological/results_dict.npz",
+    "scene_glb": "/home/ywan0794/PlatonicNav/thought_experiment_round_2/data/scenes/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+    "scene_id": "EU6Fwq7SyZv",
+    "selection_manifest_row": {
+      "bm_query_phrase": "chair",
+      "easy_start_n_segments_back": 3,
+      "episode_id": 781,
+      "episode_key": "EU6Fwq7SyZv_ep781",
+      "estimated_complexity": "simple",
+      "geodesic_distance_original_m": 5.613,
+      "goal_position": [
+        10.137900352478027,
+        3.6180613040924072,
+        2.3435800075531006
+      ],
+      "instruction": "From here, move ahead in between bar and table to the chair.",
+      "instruction_original": "Move ahead in between bar and table to the chair.",
+      "instruction_word_count": 12,
+      "reference_path": [
+        [
+          9.9904753728255,
+          3.6180613040924072,
+          5.324710978166328
+        ],
+        [
+          10.005999565124512,
+          3.6180613040924072,
+          5.137619972229004
+        ],
+        [
+          9.929570198059082,
+          3.6180613040924072,
+          3.672179937362671
+        ],
+        [
+          10.137900352478027,
+          3.6180613040924072,
+          2.3435800075531006
+        ]
+      ],
+      "scene_id": "EU6Fwq7SyZv",
+      "scene_id_raw": "mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb",
+      "selection_reason": "easy-start 3.0m; simple final path (4 waypoints, 0 turns); short clear target 'chair' mapped to chair",
+      "start_distance_setting": "easy3",
+      "start_position": [
+        9.9904753728255,
+        3.6180613040924072,
+        5.324710978166328
+      ],
+      "start_rotation": [
+        0.0,
+        -0.04138169883281532,
+        0.0,
+        0.9991434106281791
+      ],
+      "target_category": "chair",
+      "target_extractor": "ordered_keyword_last_high_priority",
+      "target_phrase": "chair",
+      "target_priority": 4,
+      "target_type": "object",
+      "teacher_final_path_length_m": 3.0,
+      "teacher_path_length_m": 3.0,
+      "teacher_turn_count": 0,
+      "teacher_waypoint_count": 4,
+      "trajectory_id": 3263
+    },
+    "selection_reason": "easy-start 3.0m; simple final path (4 waypoints, 0 turns); short clear target 'chair' mapped to chair",
+    "start_position": [
+      9.9904753728255,
+      3.6180613040924072,
+      5.324710978166328
+    ],
+    "success": true,
+    "success_basis": "semantic_category",
+    "success_radius_m": 1.0,
+    "success_status": "success",
+    "target_category": "chair",
+    "target_phrase": "chair",
+    "target_type": "object",
+    "teacher_final_path_length_m": 3.0,
+    "visualization_goal_position_source": "R2R-CE selection manifest; visualization/evaluation marker only, not used by PlatonicNav-BM policy or blind-match goal selection"
+  },
+  "canvas_size": [
+    1920,
+    1080
+  ],
+  "card_rect": [
+    160,
+    118,
+    960,
+    540
+  ],
+  "codec": "avc1",
+  "episode_name": "EU6Fwq7SyZv_ep781",
+  "fps": 12,
+  "frame_count": 49,
+  "gpu_device_id": 0,
+  "presentation_wrapper": false,
+  "rank": 4,
+  "scene_dataset_config": "",
+  "status": "rendered",
+  "streams": [
+    "ego_rgb",
+    "depth",
+    "bev"
+  ],
+  "video_checks": {
+    "bev": {
+      "fourcc": "avc1",
+      "frame_count": 49,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/EU6Fwq7SyZv_ep781__from_here_move_ahead_in_between_bar_and_table_to_the_chair/bev.mp4",
+      "width": 1920
+    },
+    "depth": {
+      "fourcc": "avc1",
+      "frame_count": 49,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/EU6Fwq7SyZv_ep781__from_here_move_ahead_in_between_bar_and_table_to_the_chair/depth.mp4",
+      "width": 1920
+    },
+    "ego_rgb": {
+      "fourcc": "avc1",
+      "frame_count": 49,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/EU6Fwq7SyZv_ep781__from_here_move_ahead_in_between_bar_and_table_to_the_chair/ego_rgb.mp4",
+      "width": 1920
+    }
+  },
+  "video_paths": {
+    "bev": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/EU6Fwq7SyZv_ep781__from_here_move_ahead_in_between_bar_and_table_to_the_chair/bev.mp4",
+    "depth": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/EU6Fwq7SyZv_ep781__from_here_move_ahead_in_between_bar_and_table_to_the_chair/depth.mp4",
+    "ego_rgb": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/EU6Fwq7SyZv_ep781__from_here_move_ahead_in_between_bar_and_table_to_the_chair/ego_rgb.mp4"
+  }
+}

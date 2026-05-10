@@ -1,0 +1,218 @@
+{
+  "candidate": {
+    "bm_query_phrase": "table",
+    "controller_final_distance": 0.9878929853439331,
+    "controller_max_steps": 500,
+    "controller_metadata": {
+      "camera fov": "79.00",
+      "distance_to_final_goal_from_start": "3.0769777297973633",
+      "final_distance": "0.9878929853439331",
+      "goal distance threshold": "1.0",
+      "goal position": "",
+      "goal_source": "topological",
+      "inferring_depth": "False",
+      "max steps": "500",
+      "method": "learnt",
+      "steer pid values": "[]",
+      "step": "64",
+      "success_status": "success",
+      "time_delta": "0.1",
+      "traversable categories": "",
+      "velocity_control": "nan"
+    },
+    "controller_step": 64,
+    "controller_success_status": "success",
+    "episode_id": 1718,
+    "episode_key": "QUCTc6BB5sX_ep1718",
+    "episode_name": "QUCTc6BB5sX_ep1718",
+    "evaluation_row": {
+      "episode_id": "1718",
+      "episode_key": "QUCTc6BB5sX_ep1718",
+      "etpnav_distance_m": "",
+      "etpnav_path_length_m": "",
+      "etpnav_prediction_available": "False",
+      "etpnav_spl": "0.0",
+      "etpnav_success": "False",
+      "etpnav_success_basis": "missing_trajectory",
+      "instruction": "From here, turn left and go straight until you get to a large table.",
+      "platonic_collisions": "22",
+      "platonic_csv": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/QUCTc6BB5sX_ep1718/20260510-162019_learnt_topological/QUCTc6BB5sX_ep1718_learnt_topological/results.csv",
+      "platonic_distance_m": "0.0",
+      "platonic_path_length_m": "2.329467503059194",
+      "platonic_spl": "1.0",
+      "platonic_success": "True",
+      "platonic_success_basis": "semantic_category",
+      "scene_id": "QUCTc6BB5sX",
+      "success_radius_m": "1.0",
+      "target_category": "table",
+      "target_phrase": "table",
+      "target_type": "object",
+      "teacher_final_path_length_m": "3.0"
+    },
+    "final_distance": 0.0,
+    "frame_count_from_results_csv": 64,
+    "goal_position": [
+      -9.245499610900879,
+      -3.153916120529175,
+      -11.546899795532227
+    ],
+    "goal_text": "table",
+    "instruction": "From here, turn left and go straight until you get to a large table.",
+    "instruction_word_count": 14,
+    "metadata_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/QUCTc6BB5sX_ep1718/20260510-162019_learnt_topological/QUCTc6BB5sX_ep1718_learnt_topological/metadata.txt",
+    "path_ratio_to_teacher_final": 0.776489167686398,
+    "platonic_collisions": 22,
+    "platonic_distance_m": 0.0,
+    "platonic_path_length_m": 2.329467503059194,
+    "platonic_spl": 1.0,
+    "reference_path": [
+      [
+        -6.247107296197847,
+        -3.245194911956787,
+        -11.548851862415678
+      ],
+      [
+        -6.602749824523926,
+        -3.245194911956787,
+        -11.54419994354248
+      ],
+      [
+        -9.245499610900879,
+        -3.153916120529175,
+        -11.546899795532227
+      ]
+    ],
+    "results_csv_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/QUCTc6BB5sX_ep1718/20260510-162019_learnt_topological/QUCTc6BB5sX_ep1718_learnt_topological/results.csv",
+    "results_dict_npz_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/QUCTc6BB5sX_ep1718/20260510-162019_learnt_topological/QUCTc6BB5sX_ep1718_learnt_topological/results_dict.npz",
+    "scene_glb": "/home/ywan0794/PlatonicNav/thought_experiment_round_2/data/scenes/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+    "scene_id": "QUCTc6BB5sX",
+    "selection_manifest_row": {
+      "bm_query_phrase": "table",
+      "easy_start_n_segments_back": 2,
+      "episode_id": 1718,
+      "episode_key": "QUCTc6BB5sX_ep1718",
+      "estimated_complexity": "simple",
+      "geodesic_distance_original_m": 10.676,
+      "goal_position": [
+        -9.245499610900879,
+        -3.153916120529175,
+        -11.546899795532227
+      ],
+      "instruction": "From here, turn left and go straight until you get to a large table.",
+      "instruction_original": "Turn left and go straight until you get to a large table.",
+      "instruction_word_count": 14,
+      "reference_path": [
+        [
+          -6.247107296197847,
+          -3.245194911956787,
+          -11.548851862415678
+        ],
+        [
+          -6.602749824523926,
+          -3.245194911956787,
+          -11.54419994354248
+        ],
+        [
+          -9.245499610900879,
+          -3.153916120529175,
+          -11.546899795532227
+        ]
+      ],
+      "scene_id": "QUCTc6BB5sX",
+      "scene_id_raw": "mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+      "selection_reason": "easy-start 3.0m; simple final path (3 waypoints, 0 turns); short clear target 'table' mapped to table",
+      "start_distance_setting": "easy3",
+      "start_position": [
+        -6.247107296197847,
+        -3.245194911956787,
+        -11.548851862415678
+      ],
+      "start_rotation": [
+        0.0,
+        0.7117159557706508,
+        0.0,
+        0.7024673645810665
+      ],
+      "target_category": "table",
+      "target_extractor": "ordered_keyword_last_high_priority",
+      "target_phrase": "table",
+      "target_priority": 4,
+      "target_type": "object",
+      "teacher_final_path_length_m": 3.0,
+      "teacher_path_length_m": 3.0,
+      "teacher_turn_count": 0,
+      "teacher_waypoint_count": 3,
+      "trajectory_id": 6828
+    },
+    "selection_reason": "easy-start 3.0m; simple final path (3 waypoints, 0 turns); short clear target 'table' mapped to table",
+    "start_position": [
+      -6.247107296197847,
+      -3.245194911956787,
+      -11.548851862415678
+    ],
+    "success": true,
+    "success_basis": "semantic_category",
+    "success_radius_m": 1.0,
+    "success_status": "success",
+    "target_category": "table",
+    "target_phrase": "table",
+    "target_type": "object",
+    "teacher_final_path_length_m": 3.0,
+    "visualization_goal_position_source": "R2R-CE selection manifest; visualization/evaluation marker only, not used by PlatonicNav-BM policy or blind-match goal selection"
+  },
+  "canvas_size": [
+    1920,
+    1080
+  ],
+  "card_rect": [
+    160,
+    118,
+    960,
+    540
+  ],
+  "codec": "avc1",
+  "episode_name": "QUCTc6BB5sX_ep1718",
+  "fps": 12,
+  "frame_count": 64,
+  "gpu_device_id": 0,
+  "presentation_wrapper": false,
+  "rank": 1,
+  "scene_dataset_config": "",
+  "status": "rendered",
+  "streams": [
+    "ego_rgb",
+    "depth",
+    "bev"
+  ],
+  "video_checks": {
+    "bev": {
+      "fourcc": "avc1",
+      "frame_count": 64,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/QUCTc6BB5sX_ep1718__from_here_turn_left_and_go_straight_until_you_get_to_a_large_table/bev.mp4",
+      "width": 1920
+    },
+    "depth": {
+      "fourcc": "avc1",
+      "frame_count": 64,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/QUCTc6BB5sX_ep1718__from_here_turn_left_and_go_straight_until_you_get_to_a_large_table/depth.mp4",
+      "width": 1920
+    },
+    "ego_rgb": {
+      "fourcc": "avc1",
+      "frame_count": 64,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/QUCTc6BB5sX_ep1718__from_here_turn_left_and_go_straight_until_you_get_to_a_large_table/ego_rgb.mp4",
+      "width": 1920
+    }
+  },
+  "video_paths": {
+    "bev": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/QUCTc6BB5sX_ep1718__from_here_turn_left_and_go_straight_until_you_get_to_a_large_table/bev.mp4",
+    "depth": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/QUCTc6BB5sX_ep1718__from_here_turn_left_and_go_straight_until_you_get_to_a_large_table/depth.mp4",
+    "ego_rgb": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m/QUCTc6BB5sX_ep1718__from_here_turn_left_and_go_straight_until_you_get_to_a_large_table/ego_rgb.mp4"
+  }
+}

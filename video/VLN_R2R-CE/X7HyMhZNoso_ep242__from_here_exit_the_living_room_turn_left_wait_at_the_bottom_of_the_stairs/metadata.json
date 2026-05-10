@@ -1,0 +1,218 @@
+{
+  "candidate": {
+    "bm_query_phrase": "stairs",
+    "controller_final_distance": 0.9711378812789917,
+    "controller_max_steps": 500,
+    "controller_metadata": {
+      "camera fov": "79.00",
+      "distance_to_final_goal_from_start": "2.983685255050659",
+      "final_distance": "0.9711378812789917",
+      "goal distance threshold": "1.0",
+      "goal position": "",
+      "goal_source": "topological",
+      "inferring_depth": "False",
+      "max steps": "500",
+      "method": "learnt",
+      "steer pid values": "[]",
+      "step": "59",
+      "success_status": "success",
+      "time_delta": "0.1",
+      "traversable categories": "",
+      "velocity_control": "nan"
+    },
+    "controller_step": 59,
+    "controller_success_status": "success",
+    "episode_id": 242,
+    "episode_key": "X7HyMhZNoso_ep242",
+    "episode_name": "X7HyMhZNoso_ep242",
+    "evaluation_row": {
+      "episode_id": "242",
+      "episode_key": "X7HyMhZNoso_ep242",
+      "etpnav_distance_m": "",
+      "etpnav_path_length_m": "",
+      "etpnav_prediction_available": "False",
+      "etpnav_spl": "0.0",
+      "etpnav_success": "False",
+      "etpnav_success_basis": "missing_trajectory",
+      "instruction": "From here, exit the living room, turn left, wait at the bottom of the stairs.",
+      "platonic_collisions": "18",
+      "platonic_csv": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/X7HyMhZNoso_ep242/20260510-142651_learnt_topological/X7HyMhZNoso_ep242_learnt_topological/results.csv",
+      "platonic_distance_m": "0.7598791122436523",
+      "platonic_path_length_m": "2.0392657839010773",
+      "platonic_spl": "1.0",
+      "platonic_success": "True",
+      "platonic_success_basis": "semantic_category",
+      "scene_id": "X7HyMhZNoso",
+      "success_radius_m": "1.0",
+      "target_category": "stairs",
+      "target_phrase": "stairs",
+      "target_type": "landmark",
+      "teacher_final_path_length_m": "3.0"
+    },
+    "final_distance": 0.7598791122436523,
+    "frame_count_from_results_csv": 59,
+    "goal_position": [
+      -0.9414029717445374,
+      0.6344853639602661,
+      5.475780010223389
+    ],
+    "goal_text": "stairs",
+    "instruction": "From here, exit the living room, turn left, wait at the bottom of the stairs.",
+    "instruction_word_count": 15,
+    "metadata_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/X7HyMhZNoso_ep242/20260510-142651_learnt_topological/X7HyMhZNoso_ep242_learnt_topological/metadata.txt",
+    "path_ratio_to_teacher_final": 0.6797552613003591,
+    "platonic_collisions": 18,
+    "platonic_distance_m": 0.7598791122436523,
+    "platonic_path_length_m": 2.0392657839010773,
+    "platonic_spl": 1.0,
+    "reference_path": [
+      [
+        -2.0554049890914596,
+        0.46425914764404297,
+        2.7410859843607445
+      ],
+      [
+        -1.0356899499893188,
+        0.46425914764404297,
+        4.813139915466309
+      ],
+      [
+        -0.9414029717445374,
+        0.6344853639602661,
+        5.475780010223389
+      ]
+    ],
+    "results_csv_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/X7HyMhZNoso_ep242/20260510-142651_learnt_topological/X7HyMhZNoso_ep242_learnt_topological/results.csv",
+    "results_dict_npz_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/X7HyMhZNoso_ep242/20260510-142651_learnt_topological/X7HyMhZNoso_ep242_learnt_topological/results_dict.npz",
+    "scene_glb": "/home/ywan0794/PlatonicNav/thought_experiment_round_2/data/scenes/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+    "scene_id": "X7HyMhZNoso",
+    "selection_manifest_row": {
+      "bm_query_phrase": "stairs",
+      "easy_start_n_segments_back": 2,
+      "episode_id": 242,
+      "episode_key": "X7HyMhZNoso_ep242",
+      "estimated_complexity": "simple",
+      "geodesic_distance_original_m": 7.082,
+      "goal_position": [
+        -0.9414029717445374,
+        0.6344853639602661,
+        5.475780010223389
+      ],
+      "instruction": "From here, exit the living room, turn left, wait at the bottom of the stairs.",
+      "instruction_original": "Exit the living room, turn left, wait at the bottom of the stairs.",
+      "instruction_word_count": 15,
+      "reference_path": [
+        [
+          -2.0554049890914596,
+          0.46425914764404297,
+          2.7410859843607445
+        ],
+        [
+          -1.0356899499893188,
+          0.46425914764404297,
+          4.813139915466309
+        ],
+        [
+          -0.9414029717445374,
+          0.6344853639602661,
+          5.475780010223389
+        ]
+      ],
+      "scene_id": "X7HyMhZNoso",
+      "scene_id_raw": "mp3d/X7HyMhZNoso/X7HyMhZNoso.glb",
+      "selection_reason": "easy-start 3.0m; simple final path (3 waypoints, 0 turns); short clear target 'stairs' mapped to stairs",
+      "start_distance_setting": "easy3",
+      "start_position": [
+        -2.0554049890914596,
+        0.46425914764404297,
+        2.7410859843607445
+      ],
+      "start_rotation": [
+        0.0,
+        -0.973969886147954,
+        0.0,
+        0.2266774379530119
+      ],
+      "target_category": "stairs",
+      "target_extractor": "ordered_keyword_last_high_priority",
+      "target_phrase": "stairs",
+      "target_priority": 4,
+      "target_type": "landmark",
+      "teacher_final_path_length_m": 3.0,
+      "teacher_path_length_m": 3.0,
+      "teacher_turn_count": 0,
+      "teacher_waypoint_count": 3,
+      "trajectory_id": 973
+    },
+    "selection_reason": "easy-start 3.0m; simple final path (3 waypoints, 0 turns); short clear target 'stairs' mapped to stairs",
+    "start_position": [
+      -2.0554049890914596,
+      0.46425914764404297,
+      2.7410859843607445
+    ],
+    "success": true,
+    "success_basis": "semantic_category",
+    "success_radius_m": 1.0,
+    "success_status": "success",
+    "target_category": "stairs",
+    "target_phrase": "stairs",
+    "target_type": "landmark",
+    "teacher_final_path_length_m": 3.0,
+    "visualization_goal_position_source": "R2R-CE selection manifest; visualization/evaluation marker only, not used by PlatonicNav-BM policy or blind-match goal selection"
+  },
+  "canvas_size": [
+    1920,
+    1080
+  ],
+  "card_rect": [
+    160,
+    118,
+    960,
+    540
+  ],
+  "codec": "avc1",
+  "episode_name": "X7HyMhZNoso_ep242",
+  "fps": 12,
+  "frame_count": 59,
+  "gpu_device_id": 0,
+  "presentation_wrapper": false,
+  "rank": 6,
+  "scene_dataset_config": "",
+  "status": "rendered",
+  "streams": [
+    "ego_rgb",
+    "depth",
+    "bev"
+  ],
+  "video_checks": {
+    "bev": {
+      "fourcc": "avc1",
+      "frame_count": 59,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/X7HyMhZNoso_ep242__from_here_exit_the_living_room_turn_left_wait_at_the_bottom_of_the_stairs/bev.mp4",
+      "width": 1920
+    },
+    "depth": {
+      "fourcc": "avc1",
+      "frame_count": 59,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/X7HyMhZNoso_ep242__from_here_exit_the_living_room_turn_left_wait_at_the_bottom_of_the_stairs/depth.mp4",
+      "width": 1920
+    },
+    "ego_rgb": {
+      "fourcc": "avc1",
+      "frame_count": 59,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/X7HyMhZNoso_ep242__from_here_exit_the_living_room_turn_left_wait_at_the_bottom_of_the_stairs/ego_rgb.mp4",
+      "width": 1920
+    }
+  },
+  "video_paths": {
+    "bev": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/X7HyMhZNoso_ep242__from_here_exit_the_living_room_turn_left_wait_at_the_bottom_of_the_stairs/bev.mp4",
+    "depth": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/X7HyMhZNoso_ep242__from_here_exit_the_living_room_turn_left_wait_at_the_bottom_of_the_stairs/depth.mp4",
+    "ego_rgb": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/X7HyMhZNoso_ep242__from_here_exit_the_living_room_turn_left_wait_at_the_bottom_of_the_stairs/ego_rgb.mp4"
+  }
+}

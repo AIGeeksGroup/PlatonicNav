@@ -116,7 +116,7 @@
                   <span>Code</span>
                 </a>
               </span>
-              <span class="text-center inline-block my-3.5 sm:my-2 mx-2">
+              <!-- <span class="text-center inline-block my-3.5 sm:my-2 mx-2">
                 <a href="https://huggingface.co/AIGeeksGroup/PlatonicNav" target="_blank" class="text-xl no-underline font-normal text-[#009cff] bg-[#f9f9f9] hover:bg-[#f4f4f4] hover:transition-all px-4 py-3 rounded-xl">
                   <span class="align-middle inline-flex justify-center mr-0.25">
                     <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -130,7 +130,7 @@
                   </span>
                   <span>Model</span>
                 </a>
-              </span>
+              </span> -->
             </p>
             <div class="mx-auto" style="width: 70%; max-width: 44.8rem;">
               <div id="teaser-player" class="flex justify-center content-center rounded-xl" style="position: relative; overflow: hidden;">
@@ -482,6 +482,281 @@
                 </video>
                 <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
                   <source src="video/sim_ovon/zt1RVoi7PcG_ep6215_photo/bev.mp4" type="video/mp4"/>
+                </video>
+              </div>
+            </div>
+            <hr class="my-10 border-t border-stone-200"/>
+            <h2 class="text-center font-semibold" id="simulation-vln-r2r-ce">Simulation: VLN (R2R-CE)
+            </h2>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-1">Demo 1: Fireplace</h3>
+            <p class="text-center font-light text-base sm:text-lg md:max-w-[85%] mx-auto !mt-0 !mb-3">From here, walk to the front of the fireplace.</p>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>BEV</span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem;">
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/2azQ1b91cZZ_ep396__from_here_walk_to_the_front_of_the_fireplace/ego_rgb.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/2azQ1b91cZZ_ep396__from_here_walk_to_the_front_of_the_fireplace/depth.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/2azQ1b91cZZ_ep396__from_here_walk_to_the_front_of_the_fireplace/bev.mp4" type="video/mp4"/>
+                </video>
+              </div>
+            </div>
+            <hr class="my-10 border-t border-stone-200"/>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-1">Demo 2: Stairs</h3>
+            <p class="text-center font-light text-base sm:text-lg md:max-w-[85%] mx-auto !mt-0 !mb-3">From here, head towards the stairs. Stop on the round rug next to the flowers.</p>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>BEV</span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem;">
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/2azQ1b91cZZ_ep488__from_here_head_towards_the_stairs_stop_on_the_round_rug_next_to_the_flowers/ego_rgb.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/2azQ1b91cZZ_ep488__from_here_head_towards_the_stairs_stop_on_the_round_rug_next_to_the_flowers/depth.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/2azQ1b91cZZ_ep488__from_here_head_towards_the_stairs_stop_on_the_round_rug_next_to_the_flowers/bev.mp4" type="video/mp4"/>
+                </video>
+              </div>
+            </div>
+            <hr class="my-10 border-t border-stone-200"/>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-1">Demo 3: Couch</h3>
+            <p class="text-center font-light text-base sm:text-lg md:max-w-[85%] mx-auto !mt-0 !mb-3">From here, turn left and go straight until you get to three tables with chairs. Turn left and wait near the couch.</p>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>BEV</span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem;">
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/8194nk5LbLH_ep1079__from_here_turn_left_and_go_straight_until_you_get_to_three_tables_with_chairs_turn_left_and_wait_near_the_couc/ego_rgb.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/8194nk5LbLH_ep1079__from_here_turn_left_and_go_straight_until_you_get_to_three_tables_with_chairs_turn_left_and_wait_near_the_couc/depth.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/8194nk5LbLH_ep1079__from_here_turn_left_and_go_straight_until_you_get_to_three_tables_with_chairs_turn_left_and_wait_near_the_couc/bev.mp4" type="video/mp4"/>
+                </video>
+              </div>
+            </div>
+            <hr class="my-10 border-t border-stone-200"/>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-1">Demo 4: Island</h3>
+            <p class="text-center font-light text-base sm:text-lg md:max-w-[85%] mx-auto !mt-0 !mb-3">From here, walk into the dining room area. Stop in front of the island.</p>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>BEV</span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem;">
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/8194nk5LbLH_ep732__from_here_walk_into_the_dining_room_area_stop_in_front_of_the_island/ego_rgb.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/8194nk5LbLH_ep732__from_here_walk_into_the_dining_room_area_stop_in_front_of_the_island/depth.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/8194nk5LbLH_ep732__from_here_walk_into_the_dining_room_area_stop_in_front_of_the_island/bev.mp4" type="video/mp4"/>
+                </video>
+              </div>
+            </div>
+            <hr class="my-10 border-t border-stone-200"/>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-1">Demo 5: Table</h3>
+            <p class="text-center font-light text-base sm:text-lg md:max-w-[85%] mx-auto !mt-0 !mb-3">From here, walk into the kitchen, around the dining table to the buffet. Stop and wait there.</p>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>BEV</span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem;">
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/EU6Fwq7SyZv_ep1489__from_here_walk_into_the_kitchen_around_the_dining_table_to_the_buffet_stop_and_wait_there/ego_rgb.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/EU6Fwq7SyZv_ep1489__from_here_walk_into_the_kitchen_around_the_dining_table_to_the_buffet_stop_and_wait_there/depth.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/EU6Fwq7SyZv_ep1489__from_here_walk_into_the_kitchen_around_the_dining_table_to_the_buffet_stop_and_wait_there/bev.mp4" type="video/mp4"/>
+                </video>
+              </div>
+            </div>
+            <hr class="my-10 border-t border-stone-200"/>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-1">Demo 6: Desk</h3>
+            <p class="text-center font-light text-base sm:text-lg md:max-w-[85%] mx-auto !mt-0 !mb-3">From here, walk towards the desk in the office area. Stop next to the desk.</p>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>BEV</span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem;">
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/EU6Fwq7SyZv_ep426__from_here_walk_towards_the_desk_in_the_office_area_stop_next_to_the_desk/ego_rgb.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/EU6Fwq7SyZv_ep426__from_here_walk_towards_the_desk_in_the_office_area_stop_next_to_the_desk/depth.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/EU6Fwq7SyZv_ep426__from_here_walk_towards_the_desk_in_the_office_area_stop_next_to_the_desk/bev.mp4" type="video/mp4"/>
+                </video>
+              </div>
+            </div>
+            <hr class="my-10 border-t border-stone-200"/>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-1">Demo 7: Chair</h3>
+            <p class="text-center font-light text-base sm:text-lg md:max-w-[85%] mx-auto !mt-0 !mb-3">From here, move ahead in between bar and table to the chair.</p>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>BEV</span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem;">
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/EU6Fwq7SyZv_ep781__from_here_move_ahead_in_between_bar_and_table_to_the_chair/ego_rgb.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/EU6Fwq7SyZv_ep781__from_here_move_ahead_in_between_bar_and_table_to_the_chair/depth.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/EU6Fwq7SyZv_ep781__from_here_move_ahead_in_between_bar_and_table_to_the_chair/bev.mp4" type="video/mp4"/>
+                </video>
+              </div>
+            </div>
+            <hr class="my-10 border-t border-stone-200"/>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-1">Demo 8: Table</h3>
+            <p class="text-center font-light text-base sm:text-lg md:max-w-[85%] mx-auto !mt-0 !mb-3">From here, turn left and go straight until you get to a large table.</p>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>BEV</span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem;">
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/QUCTc6BB5sX_ep1718__from_here_turn_left_and_go_straight_until_you_get_to_a_large_table/ego_rgb.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/QUCTc6BB5sX_ep1718__from_here_turn_left_and_go_straight_until_you_get_to_a_large_table/depth.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/QUCTc6BB5sX_ep1718__from_here_turn_left_and_go_straight_until_you_get_to_a_large_table/bev.mp4" type="video/mp4"/>
+                </video>
+              </div>
+            </div>
+            <hr class="my-10 border-t border-stone-200"/>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-1">Demo 9: Stairs</h3>
+            <p class="text-center font-light text-base sm:text-lg md:max-w-[85%] mx-auto !mt-0 !mb-3">From here, walk down the first set of stairs. Wait there.</p>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>BEV</span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem;">
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/TbHJrupSAjP_ep1113__from_here_walk_down_the_first_set_of_stairs_wait_there/ego_rgb.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/TbHJrupSAjP_ep1113__from_here_walk_down_the_first_set_of_stairs_wait_there/depth.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/TbHJrupSAjP_ep1113__from_here_walk_down_the_first_set_of_stairs_wait_there/bev.mp4" type="video/mp4"/>
+                </video>
+              </div>
+            </div>
+            <hr class="my-10 border-t border-stone-200"/>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-1">Demo 10: Stairs</h3>
+            <p class="text-center font-light text-base sm:text-lg md:max-w-[85%] mx-auto !mt-0 !mb-3">From here, turn left continue down the hallway until you get to the stairs. Wait there.</p>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>BEV</span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem;">
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/TbHJrupSAjP_ep1486__from_here_turn_left_continue_down_the_hallway_until_you_get_to_the_stairs_wait_there/ego_rgb.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/TbHJrupSAjP_ep1486__from_here_turn_left_continue_down_the_hallway_until_you_get_to_the_stairs_wait_there/depth.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/TbHJrupSAjP_ep1486__from_here_turn_left_continue_down_the_hallway_until_you_get_to_the_stairs_wait_there/bev.mp4" type="video/mp4"/>
+                </video>
+              </div>
+            </div>
+            <hr class="my-10 border-t border-stone-200"/>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-1">Demo 11: Stairs</h3>
+            <p class="text-center font-light text-base sm:text-lg md:max-w-[85%] mx-auto !mt-0 !mb-3">From here, exit the living room, turn left, wait at the bottom of the stairs.</p>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>BEV</span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem;">
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/X7HyMhZNoso_ep242__from_here_exit_the_living_room_turn_left_wait_at_the_bottom_of_the_stairs/ego_rgb.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/X7HyMhZNoso_ep242__from_here_exit_the_living_room_turn_left_wait_at_the_bottom_of_the_stairs/depth.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/X7HyMhZNoso_ep242__from_here_exit_the_living_room_turn_left_wait_at_the_bottom_of_the_stairs/bev.mp4" type="video/mp4"/>
+                </video>
+              </div>
+            </div>
+            <hr class="my-10 border-t border-stone-200"/>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-1">Demo 12: Stairs</h3>
+            <p class="text-center font-light text-base sm:text-lg md:max-w-[85%] mx-auto !mt-0 !mb-3">From here, then turn left again and go down the stairs. Stop before going outside.</p>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>BEV</span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem;">
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/oLBMNvg9in8_ep1546__from_here_then_turn_left_again_and_go_down_the_stairs_stop_before_going_outside/ego_rgb.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/oLBMNvg9in8_ep1546__from_here_then_turn_left_again_and_go_down_the_stairs_stop_before_going_outside/depth.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/oLBMNvg9in8_ep1546__from_here_then_turn_left_again_and_go_down_the_stairs_stop_before_going_outside/bev.mp4" type="video/mp4"/>
+                </video>
+              </div>
+            </div>
+            <hr class="my-10 border-t border-stone-200"/>
+            <h3 class="text-center font-semibold text-xl text-stone-700 !mt-6 !mb-1">Demo 13: Stairs</h3>
+            <p class="text-center font-light text-base sm:text-lg md:max-w-[85%] mx-auto !mt-0 !mb-3">From here, walk down stairs. Wait at bottom of stairs.</p>
+            <div>
+              <div class="mb-2 text-center font-semibold text-stone-700" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <span>Ego</span>
+                <span>Depth</span>
+                <span>BEV</span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem;">
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/x8F5xyUWy9e_ep223__from_here_walk_down_stairs_wait_at_bottom_of_stairs/ego_rgb.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/x8F5xyUWy9e_ep223__from_here_walk_down_stairs_wait_at_bottom_of_stairs/depth.mp4" type="video/mp4"/>
+                </video>
+                <video class="rounded-xl mx-auto w-full" autoplay muted loop playsinline controls>
+                  <source src="video/VLN_R2R-CE/x8F5xyUWy9e_ep223__from_here_walk_down_stairs_wait_at_bottom_of_stairs/bev.mp4" type="video/mp4"/>
                 </video>
               </div>
             </div>

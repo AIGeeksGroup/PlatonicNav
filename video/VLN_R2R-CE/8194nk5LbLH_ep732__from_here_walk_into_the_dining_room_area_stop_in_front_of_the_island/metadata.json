@@ -1,0 +1,218 @@
+{
+  "candidate": {
+    "bm_query_phrase": "counter",
+    "controller_final_distance": 0.9854809641838074,
+    "controller_max_steps": 500,
+    "controller_metadata": {
+      "camera fov": "79.00",
+      "distance_to_final_goal_from_start": "2.720043182373047",
+      "final_distance": "0.9854809641838074",
+      "goal distance threshold": "1.0",
+      "goal position": "",
+      "goal_source": "topological",
+      "inferring_depth": "False",
+      "max steps": "500",
+      "method": "learnt",
+      "steer pid values": "[]",
+      "step": "44",
+      "success_status": "success",
+      "time_delta": "0.1",
+      "traversable categories": "",
+      "velocity_control": "nan"
+    },
+    "controller_step": 44,
+    "controller_success_status": "success",
+    "episode_id": 732,
+    "episode_key": "8194nk5LbLH_ep732",
+    "episode_name": "8194nk5LbLH_ep732",
+    "evaluation_row": {
+      "episode_id": "732",
+      "episode_key": "8194nk5LbLH_ep732",
+      "etpnav_distance_m": "",
+      "etpnav_path_length_m": "",
+      "etpnav_prediction_available": "False",
+      "etpnav_spl": "0.0",
+      "etpnav_success": "False",
+      "etpnav_success_basis": "missing_trajectory",
+      "instruction": "From here, walk into the dining room area. Stop in front of the island.",
+      "platonic_collisions": "0",
+      "platonic_csv": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/8194nk5LbLH_ep732/20260510-160728_learnt_topological/8194nk5LbLH_ep732_learnt_topological/results.csv",
+      "platonic_distance_m": "0.6730702963077473",
+      "platonic_path_length_m": "1.8834669937149133",
+      "platonic_spl": "1.0",
+      "platonic_success": "True",
+      "platonic_success_basis": "semantic_category",
+      "scene_id": "8194nk5LbLH",
+      "success_radius_m": "1.0",
+      "target_category": "counter",
+      "target_phrase": "island",
+      "target_type": "object",
+      "teacher_final_path_length_m": "3.0"
+    },
+    "final_distance": 0.6730702963077473,
+    "frame_count_from_results_csv": 44,
+    "goal_position": [
+      -4.606070041656494,
+      0.0985960066318512,
+      2.594899892807007
+    ],
+    "goal_text": "island",
+    "instruction": "From here, walk into the dining room area. Stop in front of the island.",
+    "instruction_word_count": 14,
+    "metadata_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/8194nk5LbLH_ep732/20260510-160728_learnt_topological/8194nk5LbLH_ep732_learnt_topological/metadata.txt",
+    "path_ratio_to_teacher_final": 0.6278223312383044,
+    "platonic_collisions": 0,
+    "platonic_distance_m": 0.6730702963077473,
+    "platonic_path_length_m": 1.8834669937149133,
+    "platonic_spl": 1.0,
+    "reference_path": [
+      [
+        -1.782124012306266,
+        0.0985960066318512,
+        3.5431337910709355
+      ],
+      [
+        -2.2788500785827637,
+        0.0985960066318512,
+        3.2281999588012695
+      ],
+      [
+        -4.606070041656494,
+        0.0985960066318512,
+        2.594899892807007
+      ]
+    ],
+    "results_csv_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/8194nk5LbLH_ep732/20260510-160728_learnt_topological/8194nk5LbLH_ep732_learnt_topological/results.csv",
+    "results_dict_npz_path": "/home/ywan0794/PlatonicNav/results/PlatonicNav_BM/r2r_ce_top1_gtr_showcase_20260510-003201/pn_top1_gtr_1m_selected/platonicnav_runs/8194nk5LbLH_ep732/20260510-160728_learnt_topological/8194nk5LbLH_ep732_learnt_topological/results_dict.npz",
+    "scene_glb": "/home/ywan0794/PlatonicNav/thought_experiment_round_2/data/scenes/mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+    "scene_id": "8194nk5LbLH",
+    "selection_manifest_row": {
+      "bm_query_phrase": "counter",
+      "easy_start_n_segments_back": 2,
+      "episode_id": 732,
+      "episode_key": "8194nk5LbLH_ep732",
+      "estimated_complexity": "simple",
+      "geodesic_distance_original_m": 10.879,
+      "goal_position": [
+        -4.606070041656494,
+        0.0985960066318512,
+        2.594899892807007
+      ],
+      "instruction": "From here, walk into the dining room area. Stop in front of the island.",
+      "instruction_original": "Walk down the hallway and past the sofa. Walk into the dining room area. Stop in front of the island.",
+      "instruction_word_count": 14,
+      "reference_path": [
+        [
+          -1.782124012306266,
+          0.0985960066318512,
+          3.5431337910709355
+        ],
+        [
+          -2.2788500785827637,
+          0.0985960066318512,
+          3.2281999588012695
+        ],
+        [
+          -4.606070041656494,
+          0.0985960066318512,
+          2.594899892807007
+        ]
+      ],
+      "scene_id": "8194nk5LbLH",
+      "scene_id_raw": "mp3d/8194nk5LbLH/8194nk5LbLH.glb",
+      "selection_reason": "easy-start 3.0m; simple final path (3 waypoints, 0 turns); short clear target 'island' mapped to counter",
+      "start_distance_setting": "easy3",
+      "start_position": [
+        -1.782124012306266,
+        0.0985960066318512,
+        3.5431337910709355
+      ],
+      "start_rotation": [
+        0.0,
+        0.4819411768538884,
+        0.0,
+        0.876203573407852
+      ],
+      "target_category": "counter",
+      "target_extractor": "ordered_keyword_last_high_priority",
+      "target_phrase": "island",
+      "target_priority": 4,
+      "target_type": "object",
+      "teacher_final_path_length_m": 3.0,
+      "teacher_path_length_m": 3.0,
+      "teacher_turn_count": 0,
+      "teacher_waypoint_count": 3,
+      "trajectory_id": 2978
+    },
+    "selection_reason": "easy-start 3.0m; simple final path (3 waypoints, 0 turns); short clear target 'island' mapped to counter",
+    "start_position": [
+      -1.782124012306266,
+      0.0985960066318512,
+      3.5431337910709355
+    ],
+    "success": true,
+    "success_basis": "semantic_category",
+    "success_radius_m": 1.0,
+    "success_status": "success",
+    "target_category": "counter",
+    "target_phrase": "island",
+    "target_type": "object",
+    "teacher_final_path_length_m": 3.0,
+    "visualization_goal_position_source": "R2R-CE selection manifest; visualization/evaluation marker only, not used by PlatonicNav-BM policy or blind-match goal selection"
+  },
+  "canvas_size": [
+    1920,
+    1080
+  ],
+  "card_rect": [
+    160,
+    118,
+    960,
+    540
+  ],
+  "codec": "avc1",
+  "episode_name": "8194nk5LbLH_ep732",
+  "fps": 12,
+  "frame_count": 44,
+  "gpu_device_id": 0,
+  "presentation_wrapper": false,
+  "rank": 8,
+  "scene_dataset_config": "",
+  "status": "rendered",
+  "streams": [
+    "ego_rgb",
+    "depth",
+    "bev"
+  ],
+  "video_checks": {
+    "bev": {
+      "fourcc": "avc1",
+      "frame_count": 44,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/8194nk5LbLH_ep732__from_here_walk_into_the_dining_room_area_stop_in_front_of_the_island/bev.mp4",
+      "width": 1920
+    },
+    "depth": {
+      "fourcc": "avc1",
+      "frame_count": 44,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/8194nk5LbLH_ep732__from_here_walk_into_the_dining_room_area_stop_in_front_of_the_island/depth.mp4",
+      "width": 1920
+    },
+    "ego_rgb": {
+      "fourcc": "avc1",
+      "frame_count": 44,
+      "height": 1080,
+      "ok": true,
+      "path": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/8194nk5LbLH_ep732__from_here_walk_into_the_dining_room_area_stop_in_front_of_the_island/ego_rgb.mp4",
+      "width": 1920
+    }
+  },
+  "video_paths": {
+    "bev": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/8194nk5LbLH_ep732__from_here_walk_into_the_dining_room_area_stop_in_front_of_the_island/bev.mp4",
+    "depth": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/8194nk5LbLH_ep732__from_here_walk_into_the_dining_room_area_stop_in_front_of_the_island/depth.mp4",
+    "ego_rgb": "/home/ywan0794/PlatonicNav/simulation_video_r2rce_top1_gtr_1m_longer_turns/8194nk5LbLH_ep732__from_here_walk_into_the_dining_room_area_stop_in_front_of_the_island/ego_rgb.mp4"
+  }
+}
