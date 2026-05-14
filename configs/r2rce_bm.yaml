@@ -1,0 +1,39 @@
+dataset: r2r_ce
+pipeline: instruction_blind_match
+goal_extractor: instruction_goal_phrase
+goal_grounder: blind_match
+edge_weight_key: edge_weight_ptm
+background_cull: dinov3
+
+episode_manifest: ../examples/r2rce_tiny/episode_manifest.json
+vocabulary_path: ../examples/r2rce_tiny/vocabulary.json
+output_dir: ../outputs/r2rce_tiny
+
+vision_encoder:
+  provider: deterministic
+  dim: 3
+
+language_encoder:
+  provider: deterministic
+  dim: 3
+
+goal_extractor_config:
+  fallback_last_words: 4
+
+background_cull_config:
+  background_terms: ["floor", "ceiling"]
+  threshold: 0.95
+
+clusterer:
+  n_clusters: 2
+  max_iter: 30
+
+ptm:
+  geo_weight_key: d_geo_m
+  lambda_g: 0.8
+  lambda_s: 0.2
+  quantile_q: 0.95
+
+planner:
+  name: candidate_dijkstra
+  edge_weight_key: edge_weight_ptm

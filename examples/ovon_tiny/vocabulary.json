@@ -1,0 +1,7 @@
+{
+  "categories": [
+    {"name": "chair", "embedding": [1.0, 0.0, 0.0]},
+    {"name": "table", "embedding": [0.0, 1.0, 0.0]}
+  ]
+}
+

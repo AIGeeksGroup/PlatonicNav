@@ -1,0 +1,4 @@
+{"node_id": 1, "frame_id": 0, "semantic_hint": "floor", "centroid": [1.0, 0.0, 0.0], "area": 100, "embedding": [0.0, 0.0, 1.0], "mask": [[0, 0], [1, 1]]}
+{"node_id": 2, "frame_id": 0, "semantic_hint": "chair", "centroid": [2.0, 0.0, 0.0], "area": 50, "embedding": [1.0, 0.0, 0.0], "mask": [[1, 0], [0, 0]]}
+{"node_id": 3, "frame_id": 0, "semantic_hint": "table", "centroid": [0.0, 2.0, 0.0], "area": 60, "embedding": [0.0, 1.0, 0.0], "mask": [[0, 1], [0, 0]]}
+

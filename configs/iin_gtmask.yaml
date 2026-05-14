@@ -1,0 +1,26 @@
+dataset: hm3d_iin
+pipeline: gtmask_ptm
+goal_grounder: gtmask_iou
+edge_weight_key: edge_weight_ptm
+background_cull: dinov3
+
+episode_manifest: ../examples/iin_tiny/episode_manifest.json
+output_dir: ../outputs/iin_tiny
+
+vision_encoder:
+  provider: deterministic
+  dim: 3
+
+background_cull_config:
+  background_terms: ["floor", "ceiling"]
+  threshold: 0.95
+
+ptm:
+  geo_weight_key: d_geo_m
+  lambda_g: 0.8
+  lambda_s: 0.2
+  quantile_q: 0.95
+
+planner:
+  name: candidate_dijkstra
+  edge_weight_key: edge_weight_ptm

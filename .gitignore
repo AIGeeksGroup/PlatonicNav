@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local/editor state
+.DS_Store
+.idea/
+.vscode/
+
+# Data, results, caches
+data/
+outputs/
+results/
+hf_cache/
+external/
+checkpoints/
+weights/
+wandb/
+logs/
+
+# Large/generated artifacts
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+*.h5
+*.pickle
+*.pkl
+*.mp4
+*.avi
+*.mov
+*.out
+*.err
+

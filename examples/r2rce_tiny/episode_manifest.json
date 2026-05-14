@@ -1,0 +1,9 @@
+{
+  "episode_id": "tiny_r2rce_ep0",
+  "scene_id": "tiny_scene",
+  "instruction": "Walk forward and stop by the chair.",
+  "graph_path": "graph.json",
+  "segments_path": "segments.jsonl",
+  "start_node": 0
+}
+

@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "PlatonicNav"
+message: "If you use PlatonicNav, please cite the paper."
+authors:
+  - family-names: "TODO"
+    given-names: "TODO"
+version: 0.1.0
+date-released: 2026-05-14
+

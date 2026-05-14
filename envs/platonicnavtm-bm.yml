@@ -1,0 +1,68 @@
+# Environment: platonicnavtm-bm
+# Serves: PlatonicNavTM Phase 1 + Phase 2 (PTM v3 cosine retrieval) + figures.
+#
+# Entry points:
+#   - thought_experiment_round_2/scripts/platonicnav/02_encode_scene_nodes.py
+#     (DINOv3 segment encode + Qwen vocab + per-segment cosine tagging)
+#   - thought_experiment_round_2/scripts/platonicnav/04_select_episode_goals.py
+#     (Qwen NL encode + cosine retrieval over (cat × space) vocab)
+#   - thought_experiment_round_2/scripts/generate_trajectory_figures.py
+#
+# Python 3.11 (DINOv3 setup.py requires py>=3.11). NO habitat-sim —
+# Phase 1/2 are pure embedding + cosine retrieval (no QAP since v3).
+#
+# Post-create steps (see envs/README.md):
+#   1. `pip install -e external/dinov3`      (DINOv3 ViT-B wrapper + LinearHead)
+
+name: platonicnavtm-bm
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  # PyTorch stack (CUDA 12.1 for H100)
+  - pytorch>=2.5.1
+  - torchvision>=0.20.1
+  - pytorch-cuda=12.1
+  # Scientific / IO
+  - numpy
+  - scipy
+  - pandas
+  - h5py                  # reads sam2_masks.h5 produced by shared-sam2map
+  - pillow
+  - tqdm
+  # Plotting (bundled here; matplotlib/seaborn/PIL have zero conflict with deps)
+  - matplotlib
+  - seaborn
+  - pip:
+      # DINOv3 deps (from external/dinov3/requirements.txt)
+      - ftfy
+      - omegaconf
+      - regex
+      - submitit
+      - termcolor
+      - torchmetrics
+      # Language encoders: Qwen2.5-7B (PTM v3/v4) + bge-large-en-v1.5 (PTM v5)
+      # both routed through sentence-transformers + HuggingFace transformers.
+      # ST >=2.7.0 needed for unified `prompts` / encode_query API used by bge.
+      - sentence-transformers>=2.7.0
+      - transformers
+      - huggingface-hub
+      - accelerate
+      # mask + image helpers (DINOv3 / SAM2-RLE consumers)
+      - pycocotools
+      - timm
+      - ninja
+      # natsort: image_paths ordering in 02_encode_scene_nodes.py
+      - natsort
+      # POT: Entropic Gromov-Wasserstein for cross-space DINOv3↔Qwen alignment in PTM v3
+      - pot>=0.9
+      # itsamatch (CVPR 2025) + lapjv: Factorized Hahn-Grant QAP solver for PTM v4
+      # itsamatch is a plain package without setup.py — loaded via sys.path
+      # injection in qap_aligner.py. lapjv is the LAP backend. gurobipy is
+      # eager-imported by itsamatch.solvers/__init__.py (no license needed for import).
+      - lapjv
+      - gurobipy

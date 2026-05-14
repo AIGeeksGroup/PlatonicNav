@@ -1,0 +1,73 @@
+# Environment: objectreact-nav
+# Serves:
+#   - ObjectReact Stage B (topological map construction: load sam2_masks.h5
+#     → LightGlue matching → graph) via external/objectreact/libs/mapper/map_topo.py
+#   - ObjectReact Stage C (navigation inference) via external/objectreact/main.py
+#   - PlatonicNavTM Phase 2 navigation (reuses ObjectReact main.py, only
+#     differs by injecting `goal_gen.goalNodeIdx` from blind-match result)
+#
+# Python 3.9 + habitat-sim 0.2.4 (withbullet) + habitat-lab v0.2.4 (installed post-create)
+# + ObjectReact learned controller (pulled from HF `oravus/ObjectReact` on first run)
+#
+# Post-create steps (see envs/README.md):
+#   1. Clone habitat-lab v0.2.4 into external/objectreact/libs/habitat-lab and
+#      `pip install -e external/objectreact/libs/habitat-lab`
+#   2. `pip install -e external/objectreact/libs/matcher/LightGlue`
+#   3. `git submodule update --init --recursive` inside external/objectreact
+#      (to pull the ObjectReact controller submodule under libs/control/)
+
+name: objectreact-nav
+channels:
+  - pytorch
+  - nvidia
+  - aihabitat
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - mamba
+  # Core scientific + PyTorch stack
+  - numpy
+  - matplotlib
+  - pytorch
+  - torchvision
+  - pytorch-cuda=11.8
+  # Imaging + build
+  - opencv=4.6
+  - cmake=3.14.0
+  # Habitat (via aihabitat channel)
+  - habitat-sim
+  - withbullet
+  # ObjectReact mapper / controller deps
+  - numba=0.57
+  - pyyaml
+  - ipykernel
+  - networkx
+  - h5py
+  - natsort
+  - open-clip-torch
+  - transformers
+  - einops
+  - scikit-learn
+  - kornia
+  - pgmpy
+  - python-igraph
+  - pyvis
+  # Downstream scripts / visualization / eval
+  - ultralytics
+  - tyro
+  - faiss-gpu
+  - scikit-image
+  - spatialmath-python
+  - gdown
+  - utm
+  - seaborn
+  - wandb
+  - kaggle
+  - yacs
+  # Extras useful in this project (no conflicts with upstream deps)
+  - tqdm
+  - pillow
+  - pip:
+      - huggingface-hub

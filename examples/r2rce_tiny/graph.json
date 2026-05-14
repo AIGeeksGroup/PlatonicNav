@@ -1,0 +1,19 @@
+{
+  "graph": {
+    "description": "Tiny R2R-CE instruction asset-level fixture"
+  },
+  "nodes": [
+    {"id": 0, "name": "start", "centroid": [0.0, 0.0, 0.0]},
+    {"id": 1, "name": "floor", "centroid": [1.0, 0.0, 0.0]},
+    {"id": 2, "name": "chair", "centroid": [2.0, 0.0, 0.0]},
+    {"id": 3, "name": "table", "centroid": [0.0, 2.0, 0.0]}
+  ],
+  "edges": [
+    {"source": 0, "target": 1, "d_geo_m": 1.0},
+    {"source": 1, "target": 2, "d_geo_m": 1.0},
+    {"source": 0, "target": 3, "d_geo_m": 2.0},
+    {"source": 3, "target": 2, "d_geo_m": 2.0},
+    {"source": 0, "target": 2, "d_geo_m": 6.0}
+  ]
+}
+

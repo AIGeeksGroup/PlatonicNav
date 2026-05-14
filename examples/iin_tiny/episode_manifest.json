@@ -1,0 +1,10 @@
+{
+  "episode_id": "tiny_iin_ep0",
+  "scene_id": "tiny_scene",
+  "goal_category": "chair",
+  "graph_path": "graph.json",
+  "segments_path": "segments.jsonl",
+  "goal_mask_path": "goal_mask.json",
+  "start_node": 0
+}
+
