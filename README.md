@@ -1,17 +1,25 @@
 # PlatonicNav: Unveiling Semantic Correspondence in Navigation with Platonic Topological Maps
 
-Official implementation of **PlatonicNav: Unveiling Semantic Correspondence in Navigation with Platonic Topological Maps**.
+This is the official repository for the paper:
 
-> Embodied visual navigation, where an agent perceives a complex environment and acts to reach a goal from raw sensory input, underpins a wide range of applications such as household service robotics, assistive robotics, and large-scale autonomous exploration. However, recent attempts to unify vision-and-language navigation (VLN) and object goal navigation (ObjNav) remain at the level of architectural fusion, mixed-task training, and large vision-language pretraining, without examining whether independently trained vision and language encoders may already share a common semantic structure. Moreover, even object-centric topological maps still ground language goals through explicit cross-modal supervision such as CLIP or large vision-language models, leaving open whether such grounding is possible from a purely vision-built map. To address these challenges, we extend the *Platonic Representation Hypothesis* to embodied navigation and recast vision-only ObjNav, cross-modal ObjNav, and VLN as three different interfaces to the same object-centric semantic manifold. We further introduce **PlatonicNav**, a training-free framework whose **Platonic Topological Map** fuses geometric and semantic node distances from a self-supervised visual encoder, and grounds language goals via *blind matching* without any paired vision-language data. Extensive experiments on simulation benchmarks including HM3D-IIN, OVON, and R2R-CE on MP3D, together with deployment on Unitree Go2, which demonstrate that **PlatonicNav** generalizes across tasks, modalities, and embodiments without explicit cross-modal training.
+> **PlatonicNav: Unveiling Semantic Correspondence in Navigation with Platonic Topological Maps**
 >
-> Code: https://github.com/AIGeeksGroup/PlatonicNav  
-> Website: https://aigeeksgroup.github.io/PlatonicNav
+> Junlin Long<sup>1*</sup>, Zeyu Zhang<sup>2*&dagger;</sup>, Xu Deng<sup>3*</sup>, Yiran Wang<sup>1*</sup>  
+> Yue Yang<sup>2</sup>, Luke Borgnolo<sup>2</sup>, Maxwell Twelftree<sup>2</sup>, Yang Zhao<sup>4&ddagger;</sup>
+>
+> <sup>1</sup>USYD &nbsp; <sup>2</sup>Maincode &nbsp; <sup>3</sup>UNSW &nbsp; <sup>4</sup>La Trobe
+>
+> <sup>*</sup>Equal contribution. <sup>&dagger;</sup>Project lead. <sup>&ddagger;</sup>Corresponding author: y.zhao2@latrobe.edu.au.
 
 ### [Paper](https://github.com/AIGeeksGroup/PlatonicNav) | [Website](https://aigeeksgroup.github.io/PlatonicNav) | [Code](https://github.com/AIGeeksGroup/PlatonicNav)
 
 <p align="center">
   <img src="assets/platonicnav.png" width="95%" alt="PlatonicNav overview">
 </p>
+
+## Abstract
+
+Embodied visual navigation, where an agent perceives a complex environment and acts to reach a goal from raw sensory input, underpins a wide range of applications such as household service robotics, assistive robotics, and large-scale autonomous exploration. However, recent attempts to unify vision-and-language navigation (VLN) and object goal navigation (ObjNav) remain at the level of architectural fusion, mixed-task training, and large vision-language pretraining, without examining whether independently trained vision and language encoders may already share a common semantic structure. Moreover, even object-centric topological maps still ground language goals through explicit cross-modal supervision such as CLIP or large vision-language models, leaving open whether such grounding is possible from a purely vision-built map. To address these challenges, we extend the *Platonic Representation Hypothesis* to embodied navigation and recast vision-only ObjNav, cross-modal ObjNav, and VLN as three different interfaces to the same object-centric semantic manifold. We further introduce **PlatonicNav**, a training-free framework whose **Platonic Topological Map** fuses geometric and semantic node distances from a self-supervised visual encoder, and grounds language goals via *blind matching* without any paired vision-language data. Extensive experiments on simulation benchmarks including HM3D-IIN, OVON, and R2R-CE on MP3D, together with deployment on Unitree Go2, which demonstrate that **PlatonicNav** generalizes across tasks, modalities, and embodiments without explicit cross-modal training.
 
 ## Overview
 
@@ -65,7 +73,7 @@ src/platonicnav/
 ```bibtex
 @article{platonicnav2026,
   title={PlatonicNav: Unveiling Semantic Correspondence in Navigation with Platonic Topological Maps},
-  author={TODO},
+  author={Long, Junlin and Zhang, Zeyu and Deng, Xu and Wang, Yiran and Yang, Yue and Borgnolo, Luke and Twelftree, Maxwell and Zhao, Yang},
   journal={arXiv preprint},
   year={2026}
 }
@@ -79,4 +87,3 @@ This project is released under the license specified in `LICENSE`.
 
 PlatonicNav builds on ideas and tooling from ObjectReact, Habitat, SAM2,
 DINOv3, ETPNav, and open-vocabulary embodied navigation benchmarks.
-
