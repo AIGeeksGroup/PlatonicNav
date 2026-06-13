@@ -11,7 +11,7 @@ This is the official repository for the paper:
 >
 > <sup>*</sup>Equal contribution. <sup>&dagger;</sup>Project lead. <sup>&ddagger;</sup>Corresponding author: y.zhao2@latrobe.edu.au.
 
-### [Paper](https://github.com/AIGeeksGroup/PlatonicNav) | [Website](https://aigeeksgroup.github.io/PlatonicNav) | [Code](https://github.com/AIGeeksGroup/PlatonicNav)
+### [Paper](https://arxiv.org/abs/2606.01788) | [Website](https://aigeeksgroup.github.io/PlatonicNav) | [Code](https://github.com/AIGeeksGroup/PlatonicNav)
 
 <p align="center">
   <img src="assets/platonicnav.png" width="95%" alt="PlatonicNav overview">
